@@ -21,16 +21,6 @@
       </categories>
   </entry>
   <entry>
-    <title>gurobi安装和使用</title>
-    <url>/blog/2020/08/24/gurobi%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p> 最近领了一个任务是用一下gurobi,因为我们组以前只用cplex，最近在考虑要不要买gurobi的权限，所以要我先试用一下。<br>   安装下载页确实费了一番功夫，因为公司网的原因，始终无法下载成功，最后还是找其他组的同事要了一个安装包才成功装上。装上之后需要有licence，因为在企业的网，不是校园网，所以网上申请的学术版Licence其实不能用。好在我联系了gurobi中国区的代理公司，他们很热情，给了我一个激活文件，放到了c:\gurobi目录下，成功进行了安装。<br>   关于使用心得后续会继续进行跟进。</p>
-<p>过了快一年，现在来更新一下，这一年多来其实没怎么用gurobi，我又换了一家公司，主要做数据相关，不过gurobi的用起来还是非常不错，主要是官网上有很多配套的视频和文档，而且软件配套的也会有很多的例子，可以多看看，基本的语法和用法都可以熟悉，接下来的难度主要是如何把实际的项目用计算机的语言描述，这一点非常关键。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-      </categories>
-  </entry>
-  <entry>
     <title>join与left join</title>
     <url>/blog/2020/08/24/join%E4%B8%8Eleft%20join/</url>
     <content><![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> dm_snyy.exception_waybillno <span class="keyword">as</span>   <span class="comment">#有了as就相当于建好表，不用写into语句</span></span><br><span class="line"><span class="keyword">select</span> waybillno <span class="keyword">from</span> ods_awsm.awsm_exception_monitor</span><br><span class="line"><span class="keyword">where</span> SYS_CODE=<span class="string">&#x27;BDP&#x27;</span> <span class="keyword">and</span> EXCEPTION_TYPE=<span class="number">15</span> <span class="keyword">and</span> create_time <span class="keyword">BETWEEN</span> <span class="string">&#x27;2019-01-01&#x27;</span> <span class="keyword">and</span> <span class="string">&#x27;2019-01-10&#x27;</span> <span class="keyword">and</span> inc_day&gt;<span class="string">&#x27;20181231&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">from</span> dm_snyy.exception_waybillno  <span class="comment">#这个表里是2019-01-01到2019-01-10的所有异常运单数据</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> waybill_id,waybill_no,source_zone_code,dest_zone_code</span><br><span class="line"><span class="keyword">from</span> ods_shiva_oms.tt_operation_waybill </span><br><span class="line"><span class="keyword">LIMIT</span> <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">TABLE</span> dm_snyy.operation_waybill</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> dm_snyy.operation_waybill <span class="keyword">as</span> </span><br><span class="line"><span class="keyword">SELECT</span> waybill_no,source_zone_code,dest_zone_code</span><br><span class="line"><span class="keyword">from</span> ods_shiva_oms.tt_operation_waybill</span><br><span class="line"><span class="keyword">where</span> inc_day <span class="keyword">BETWEEN</span> <span class="string">&#x27;20190101&#x27;</span> <span class="keyword">and</span> <span class="string">&#x27;20190110&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">from</span> dm_snyy.operation_waybill</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> d.waybillno,o.source_zone_code,o.dest_zone_code</span><br><span class="line"><span class="keyword">from</span> dm_snyy.exception_waybillno d <span class="keyword">join</span> dm_snyy.operation_waybill o</span><br><span class="line"><span class="keyword">on</span> d.waybillno=o.waybill_no</span><br><span class="line"><span class="keyword">and</span> o.source_zone_code <span class="keyword">like</span> <span class="string">&#x27;010%&#x27;</span> <span class="keyword">and</span> o.dest_zone_code <span class="keyword">like</span> <span class="string">&#x27;028%&#x27;</span>;</span><br></pre></td></tr></table></figure>
@@ -38,6 +28,16 @@
 ]]></content>
       <categories>
         <category>数据库</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>gurobi安装和使用</title>
+    <url>/blog/2020/08/24/gurobi%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p> 最近领了一个任务是用一下gurobi,因为我们组以前只用cplex，最近在考虑要不要买gurobi的权限，所以要我先试用一下。<br>   安装下载页确实费了一番功夫，因为公司网的原因，始终无法下载成功，最后还是找其他组的同事要了一个安装包才成功装上。装上之后需要有licence，因为在企业的网，不是校园网，所以网上申请的学术版Licence其实不能用。好在我联系了gurobi中国区的代理公司，他们很热情，给了我一个激活文件，放到了c:\gurobi目录下，成功进行了安装。<br>   关于使用心得后续会继续进行跟进。</p>
+<p>过了快一年，现在来更新一下，这一年多来其实没怎么用gurobi，我又换了一家公司，主要做数据相关，不过gurobi的用起来还是非常不错，主要是官网上有很多配套的视频和文档，而且软件配套的也会有很多的例子，可以多看看，基本的语法和用法都可以熟悉，接下来的难度主要是如何把实际的项目用计算机的语言描述，这一点非常关键。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
       </categories>
   </entry>
   <entry>
@@ -112,15 +112,6 @@
       </categories>
   </entry>
   <entry>
-    <title>机器学习中的特征工程</title>
-    <url>/blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/</url>
-    <content><![CDATA[<p>​在机器学习的模型训练中，特征工程是非常重要的环节，虽然很多机器学习的相关书籍都把重要的篇幅放在了算法上，但是在实际的应用中，特征工程是非常重要的环节，甚至可以说是决定模型结果的关键。关于特征工程有一下几个问题需要搞清楚：1，为什么要进行特征工程 2，进行特征工程的方法有哪些。<br>1，为什么要进行特征工程<br>以非常经典的房价预测为例，影响房价的因素有很多，原始的数据集大约有几十个特征，那么我们这些特征我们都需要吗，可能有些因素与最终的房价相关度并不高，也有可能有的特征直接有冗余，这时就需要我们去掉一些特征。也有可能需要我们去根据现有特征去创造新的特征，面对不同的问题会有不同的解决方案，不可一概而论。<br>特征工程可以说实在寻找一种好的数据表示，初学者可能会有疑问，如果不进项特征工程会怎样，加入把原始的特征全部放到模型中，那么可能有些特征与最终的标签无关，或者关联很小，这样会使训练出来的模型过拟合，也就是特征太多，模型太复杂，这样训练出来的模型往往在训练集上表现很好，但是在测试集中往往表现不佳。这和数据中有大量异常值类似</p>
-]]></content>
-      <categories>
-        <category>数据科学</category>
-      </categories>
-  </entry>
-  <entry>
     <title>机器学习笔记</title>
     <url>/blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>1,对应缺失数据较少的情况可以用插值法来处理，插值的方法可以是随机森林<br>2，当使用逻辑回归建模时因为需要的特征都是数值型特征，所以会先选择将特征因子化，比如常见的one-hot编码,如下面的例子所示：</p>
@@ -128,6 +119,15 @@
 <p>2,为什么要降维？<br>主要是出于如下考虑：1. 特征维数越高，模型越容易过拟合，此时更复杂的模型就不好用。2. 相互独立的特征维数越高，在模型不变的情况下，在测试集上达到相同的效果表现所需要的训练样本的数目就越大。 3. 特征数量增加带来的训练、测试以及存储的开销都会增大。4.在某些模型中，例如基于距离计算的模型KMeans，KNN等模型，在进行距离计算时，维度过高会影响精度和性能。5.可视化分析的需要。在低维的情况下，例如二维，三维，我们可以把数据绘制出来，可视化地看到数据。当维度增高时，就难以绘制出来了。在机器学习中，有一个非常经典的维度灾难的概念。用来描述当空间维度增加时，分析和组织高维空间，因体积指数增加而遇到各种问题场景。例如，100个平均分布的点能把一个单位区间以每个点距离不超过0.01采样；而当维度增加到10后，如果以相邻点距离不超过0.01小方格采样单位超一单位超正方体，则需要10^20 个采样点。<br>所以特征不是越多越好，过多的特征可能会造成过拟合，增加计算开销<br>3，PCA算法<br>通过协方差矩阵的特征值分解能够得到数据的主成分，以二维特征为例，两个特征之间可能存在线性关系（例如运动的时速和秒速度），这样就造成了第二维信息是冗余的。PCA的目标是发现这种特征之间的线性关系，并去除。<br>4，将缺失值补为0的方法用fillna(0)完成<br>     round([],2)后边的2是保留后两位小数<br>5，</p>
 <figure class="highlight py"><table><tr><td class="code"><pre><span class="line">x_train,x_test,y_train,y_test = train_test_split(train_da, label, test_size=<span class="number">0.15</span>, random_state=<span class="number">2019</span>)</span><br></pre></td></tr></table></figure>
 <p>注意在用上面的来划分训练集合测试集的时候，train_da不是训练集，它是特征，label是标签，训练集里既有特征又有标签<br>x_train:训练集特征<br>x_test:测试集特征<br>y_train:训练集标签<br>y_test:测试集标签</p>
+]]></content>
+      <categories>
+        <category>数据科学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>机器学习中的特征工程</title>
+    <url>/blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/</url>
+    <content><![CDATA[<p>​在机器学习的模型训练中，特征工程是非常重要的环节，虽然很多机器学习的相关书籍都把重要的篇幅放在了算法上，但是在实际的应用中，特征工程是非常重要的环节，甚至可以说是决定模型结果的关键。关于特征工程有一下几个问题需要搞清楚：1，为什么要进行特征工程 2，进行特征工程的方法有哪些。<br>1，为什么要进行特征工程<br>以非常经典的房价预测为例，影响房价的因素有很多，原始的数据集大约有几十个特征，那么我们这些特征我们都需要吗，可能有些因素与最终的房价相关度并不高，也有可能有的特征直接有冗余，这时就需要我们去掉一些特征。也有可能需要我们去根据现有特征去创造新的特征，面对不同的问题会有不同的解决方案，不可一概而论。<br>特征工程可以说实在寻找一种好的数据表示，初学者可能会有疑问，如果不进项特征工程会怎样，加入把原始的特征全部放到模型中，那么可能有些特征与最终的标签无关，或者关联很小，这样会使训练出来的模型过拟合，也就是特征太多，模型太复杂，这样训练出来的模型往往在训练集上表现很好，但是在测试集中往往表现不佳。这和数据中有大量异常值类似</p>
 ]]></content>
       <categories>
         <category>数据科学</category>
