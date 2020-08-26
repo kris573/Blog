@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/Blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/Blog/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"kris573.github.io","root":"/Blog/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="高磊的博客">
+<meta property="og:url" content="https://kris573.github.io/Blog/index.html">
+<meta property="og:site_name" content="高磊的博客">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Chris">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://kris573.github.io/Blog/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>高磊的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/Blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">高磊的博客</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">数据分析与挖掘</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/Blog/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/Blog/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/Blog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/Blog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/Blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/Blog/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/Blog/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chris</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/Blog/archives/">
+        
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/Blog/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/kris573" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;kris573" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </section>
+        <div class="back-to-top animated">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+      
+
+      
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/Pycharm%E5%BF%AB%E6%8D%B7%E9%94%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/Pycharm%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="post-title-link" itemprop="url">Pycharm快捷键</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-24 10:50:29" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-25 10:26:48" itemprop="dateModified" datetime="2020-08-25T10:26:48+08:00">2020-08-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/Pycharm%E5%BF%AB%E6%8D%B7%E9%94%AE/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/Pycharm%E5%BF%AB%E6%8D%B7%E9%94%AE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ol>
+<li>快速查看库源码  Ctrl+B</li>
+<li>快速换行    Ctrl+enter</li>
+<li>切分窗口    Shift+A</li>
+<li>快速展开和合并函数    Ctrl+shift++和 Ctrl+shift+-</li>
+<li>快速注释     Ctrl+/ </li>
+<li>超级搜索     双击Shift</li>
+<li>最近访问过的文件     Ctrl+E</li>
+<li>历史粘贴板    Ctrl + Shift + V</li>
+<li>替换   Ctrl+R</li>
+<li>对已有的代码进行操作    Ctrl+Alt+T</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/gurobi%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/gurobi%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">gurobi安装和使用</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-24 10:50:29" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 09:08:03" itemprop="dateModified" datetime="2020-08-26T09:08:03+08:00">2020-08-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/gurobi%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/gurobi%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p> 最近领了一个任务是用一下gurobi,因为我们组以前只用cplex，最近在考虑要不要买gurobi的权限，所以要我先试用一下。<br>   安装下载页确实费了一番功夫，因为公司网的原因，始终无法下载成功，最后还是找其他组的同事要了一个安装包才成功装上。装上之后需要有licence，因为在企业的网，不是校园网，所以网上申请的学术版Licence其实不能用。好在我联系了gurobi中国区的代理公司，他们很热情，给了我一个激活文件，放到了c:\gurobi目录下，成功进行了安装。<br>   关于使用心得后续会继续进行跟进。</p>
+<p>过了快一年，现在来更新一下，这一年多来其实没怎么用gurobi，我又换了一家公司，主要做数据相关，不过gurobi的用起来还是非常不错，主要是官网上有很多配套的视频和文档，而且软件配套的也会有很多的例子，可以多看看，基本的语法和用法都可以熟悉，接下来的难度主要是如何把实际的项目用计算机的语言描述，这一点非常关键。</p>
+
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/join%E4%B8%8Eleft%20join/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/join%E4%B8%8Eleft%20join/" class="post-title-link" itemprop="url">join与left join</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-24 10:50:29" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 09:09:17" itemprop="dateModified" datetime="2020-08-26T09:09:17+08:00">2020-08-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/join%E4%B8%8Eleft%20join/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/join%E4%B8%8Eleft%20join/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> dm_snyy.exception_waybillno <span class="keyword">as</span>   <span class="comment">#有了as就相当于建好表，不用写into语句</span></span><br><span class="line"><span class="keyword">select</span> waybillno <span class="keyword">from</span> ods_awsm.awsm_exception_monitor</span><br><span class="line"><span class="keyword">where</span> SYS_CODE=<span class="string">&#x27;BDP&#x27;</span> <span class="keyword">and</span> EXCEPTION_TYPE=<span class="number">15</span> <span class="keyword">and</span> create_time <span class="keyword">BETWEEN</span> <span class="string">&#x27;2019-01-01&#x27;</span> <span class="keyword">and</span> <span class="string">&#x27;2019-01-10&#x27;</span> <span class="keyword">and</span> inc_day&gt;<span class="string">&#x27;20181231&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">from</span> dm_snyy.exception_waybillno  <span class="comment">#这个表里是2019-01-01到2019-01-10的所有异常运单数据</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> waybill_id,waybill_no,source_zone_code,dest_zone_code</span><br><span class="line"><span class="keyword">from</span> ods_shiva_oms.tt_operation_waybill </span><br><span class="line"><span class="keyword">LIMIT</span> <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">TABLE</span> dm_snyy.operation_waybill</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> dm_snyy.operation_waybill <span class="keyword">as</span> </span><br><span class="line"><span class="keyword">SELECT</span> waybill_no,source_zone_code,dest_zone_code</span><br><span class="line"><span class="keyword">from</span> ods_shiva_oms.tt_operation_waybill</span><br><span class="line"><span class="keyword">where</span> inc_day <span class="keyword">BETWEEN</span> <span class="string">&#x27;20190101&#x27;</span> <span class="keyword">and</span> <span class="string">&#x27;20190110&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">from</span> dm_snyy.operation_waybill</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> d.waybillno,o.source_zone_code,o.dest_zone_code</span><br><span class="line"><span class="keyword">from</span> dm_snyy.exception_waybillno d <span class="keyword">join</span> dm_snyy.operation_waybill o</span><br><span class="line"><span class="keyword">on</span> d.waybillno=o.waybill_no</span><br><span class="line"><span class="keyword">and</span> o.source_zone_code <span class="keyword">like</span> <span class="string">&#x27;010%&#x27;</span> <span class="keyword">and</span> o.dest_zone_code <span class="keyword">like</span> <span class="string">&#x27;028%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p>注意最后的join和left join的差别<br>最后之所以用join是因为join相当于inner join ,join是只有两个表都有字段时才会显示，最后只会显示北京到成都的；<br>而left join不一样，他会根据左侧表有的字段来显示，在此例中异常表的运单号在右侧正常运单号里有的就会显示，不管是不是北京发往成都的。<br>最后要用and，不用where，这里要注意on和where的用法，where在on之后起筛选的作用，on只是关联条件，无筛选作用；而where有筛选的作用。</p>
+
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/python%E5%A4%84%E7%90%86%E5%9B%BE%E7%89%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/python%E5%A4%84%E7%90%86%E5%9B%BE%E7%89%87/" class="post-title-link" itemprop="url">python处理图片</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-24 10:50:29" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 09:13:11" itemprop="dateModified" datetime="2020-08-26T09:13:11+08:00">2020-08-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/python%E5%A4%84%E7%90%86%E5%9B%BE%E7%89%87/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/python%E5%A4%84%E7%90%86%E5%9B%BE%E7%89%87/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> PIL</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line">file = (<span class="string">r&#x27;d:\user\01378237\桌面\river.jpg&#x27;</span>)</span><br><span class="line">img = Image.open(file,mode=<span class="string">&#x27;r&#x27;</span>)</span><br><span class="line">box = (<span class="number">10</span>,<span class="number">10</span>,<span class="number">500</span>,<span class="number">500</span>)</span><br><span class="line">region = img.crop(box)</span><br><span class="line">region.save(<span class="string">r&#x27;d:\user\01378237\桌面\cutting.jpg&#x27;</span>)</span><br><span class="line"><span class="comment">#img.show()</span></span><br><span class="line"><span class="keyword">print</span> (<span class="string">&#x27;img format: &#x27;</span>, img.format) <span class="comment"># 打印图像格式</span></span><br><span class="line"><span class="keyword">print</span> (<span class="string">&#x27;img size: &#x27;</span>, img.size) <span class="comment"># 打印图像尺寸</span></span><br><span class="line"><span class="keyword">print</span> (<span class="string">&#x27;img mode: &#x27;</span>, img.mode)</span><br><span class="line">img_gray = img.convert(<span class="string">&#x27;F&#x27;</span>) <span class="comment"># 转换为灰度模式</span></span><br><span class="line">img_gray.show() <span class="comment">#</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/python%E7%BC%96%E7%A8%8B%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/python%E7%BC%96%E7%A8%8B%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">python编程总结</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-24 10:50:29" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 09:13:56" itemprop="dateModified" datetime="2020-08-26T09:13:56+08:00">2020-08-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/python%E7%BC%96%E7%A8%8B%E6%80%BB%E7%BB%93/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/python%E7%BC%96%E7%A8%8B%E6%80%BB%E7%BB%93/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>1，在python当中一切皆对象,每产生一个对象会对应三个属性:id、类型type和数值<br>2，创建一个类就会创建一个类的名称空间，用来存储类中定义的所有名字，这些名字称为类的属性：而类中有两种属性：数据属性和函数属性，其中类的数据属性是共享给所有对象的，而类的函数属性是绑定到所有对象的。  3，在类的内部来说,__init__是类的函数属性,但是对于对象来说,就是绑定方法。<br> 4，命名空间的问题:先从对象的命名空间找,随后在从类的命名空间找,随后在从父类的命名<br>空间找。<br>5，所谓初始化构造函数就是在构造对象的同时被对象自动调用,完成对事物的初始化,一个类只要生成一个类对象,它一定会调用初始化构造函数.<br>特点:<br>1&gt;一个类中只能有一个初始化构造函数<br>2&gt;不能有返回值<br>3&gt;可以用它来为每个实例定制自己的特征<br>6，方法重写指在子类中重新定义父类中已有的方法，这中现象叫做方法的重写<br>举例</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">People</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self,name,age</span>):</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">        self.tell()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">tell</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&quot;%s---%s&quot;</span>%(self.name,self.age))</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>(<span class="params">People</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">tell</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&quot;呵呵!&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    student = Student(<span class="string">&quot;alex&quot;</span>,<span class="number">20</span>)</span><br><span class="line">    <span class="comment">#查看Student所有的父类</span></span><br><span class="line">    print(Student.__bases__)</span><br><span class="line">    <span class="comment">#查看最近的父类</span></span><br><span class="line">    print(Student.__base__)</span><br><span class="line">    <span class="comment">#student既是Student类,又是People类</span></span><br><span class="line">    print(isinstance(student,Student))</span><br><span class="line">    print(isinstance(student,People))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>运行结果</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">呵呵!</span><br><span class="line">(&lt;class &#x27;__main__.People&#x27;&gt;,)</span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">__main__</span>.<span class="title">People</span>&#x27;&gt;</span></span><br><span class="line"><span class="class"><span class="title">True</span></span></span><br><span class="line"><span class="class"><span class="title">True</span></span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"><span class="title">Process</span> <span class="title">finished</span> <span class="title">with</span> <span class="title">exit</span> <span class="title">code</span> 0</span></span><br></pre></td></tr></table></figure>
+<p>在此例中，子类Student和父类People都定义了Tell方法，子类没有定义构造函数，此时调用的是父类的构造函数，但注意父类构造函数在调用tell()方法时，调用的是子类的tell()函数，因为两个函数重名，相当于重写了父类的函数，此时要调用子类重写后的函数。<br>7，super关键字产生的原因：在子类当中可以通过使用super关键字来调用父类的中相应的方法，简化代码。<br>使用super调用的所有属性，都是从MRO列表当前的位置往后找，千万不要通过看代码去找继承关系，一定要看MRO列表。<br>示例代码：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&quot;from foo&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Bar</span>(<span class="params">Foo</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="comment">#Foo.test(self)</span></span><br><span class="line">        super().test()</span><br><span class="line">        print(<span class="string">&quot;bar&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    bb = Bar()</span><br><span class="line">    bb.test()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> foo</span><br><span class="line">bar</span><br><span class="line"></span><br><span class="line">Process finished <span class="keyword">with</span> exit code <span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p>8，类变量的可变属性<br>假如类命名空间中的变量是可变的话，这时候会发生什么呢？<br>答案是，如果通过类的实例改变了变量，类变量也会发生改变，还是举个例子看看吧</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Service</span>(<span class="params">object</span>):</span></span><br><span class="line">    data = []</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, other_data</span>):</span></span><br><span class="line">        self.other_data = other_data</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>在上面的代码中，在Service的命名空间中定义一个data，其初始值为空list，现在通过对象来改变它</p>
+<figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">s1</span> = <span class="type">Service</span>([&#x27;a&#x27;, &#x27;b&#x27;])</span><br><span class="line"><span class="title">s2</span> = <span class="type">Service</span>([&#x27;c&#x27;, &#x27;d&#x27;])</span><br><span class="line"><span class="title">s1</span>.<span class="class"><span class="keyword">data</span>.append(1)</span></span><br><span class="line"> </span><br><span class="line"><span class="title">s1</span>.<span class="class"><span class="keyword">data</span></span></span><br><span class="line"><span class="meta">## [1]</span></span><br><span class="line"><span class="title">s2</span>.<span class="class"><span class="keyword">data</span></span></span><br><span class="line"><span class="meta">## [1]</span></span><br><span class="line"> </span><br><span class="line"><span class="title">s2</span>.<span class="class"><span class="keyword">data</span>.append(2)</span></span><br><span class="line"> </span><br><span class="line"><span class="title">s1</span>.<span class="class"><span class="keyword">data</span></span></span><br><span class="line"><span class="meta">## [1, 2]</span></span><br><span class="line"><span class="title">s2</span>.<span class="class"><span class="keyword">data</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>可以看到，如果属性是可变的，在对象中改变这个属性，将会影响到类的命名空间。<br>可以通过赋值防止对象改变类变量。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">s1 = Service([<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>])</span><br><span class="line">s2 = Service([<span class="string">&#x27;c&#x27;</span>, <span class="string">&#x27;d&#x27;</span>])</span><br><span class="line"> </span><br><span class="line">s1.data = [<span class="number">1</span>]</span><br><span class="line">s2.data = [<span class="number">2</span>]</span><br><span class="line"> </span><br><span class="line">s1.data</span><br><span class="line"><span class="comment">## [1]</span></span><br><span class="line">s2.data</span><br><span class="line"><span class="comment">## [2]</span></span><br><span class="line">Service.data</span><br><span class="line">[<span class="number">1</span>,<span class="number">2</span>]</span><br></pre></td></tr></table></figure>
+<p>在Service类里定义了一个类变量data，注意当我们执行s1.data.append(1)时，对这个类变量进行了修改，增加了一个1.而当我们执行s1.data = [1]时，我们并没有更改类变量data,而是给s1增加了一个变量data,原来的类变量不受影响,Service.data依旧是[1,2]。这一点要特别注意。append和赋值是两种完全不同的操作。实例无法修改类变量的指向，但可以修改类变量指向的内容，注意修改类变量的指向和修改类变量指向的内容是不同的概念。</p>
+
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/%E5%B7%A5%E4%BD%9C%E4%B8%8E%E7%94%9F%E6%B4%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/%E5%B7%A5%E4%BD%9C%E4%B8%8E%E7%94%9F%E6%B4%BB/" class="post-title-link" itemprop="url">工作与生活</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-08-24 10:50:29 / Modified: 10:51:44" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">生活感悟</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/%E5%B7%A5%E4%BD%9C%E4%B8%8E%E7%94%9F%E6%B4%BB/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/%E5%B7%A5%E4%BD%9C%E4%B8%8E%E7%94%9F%E6%B4%BB/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/sql%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/sql%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">sql总结</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-08-24 10:50:29 / Modified: 21:18:06" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/sql%E6%80%BB%E7%BB%93/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/sql%E6%80%BB%E7%BB%93/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>1，</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> a.cntype,a.cy,a.efftype,a.s,a.scity scityname,b.city scity,</span><br><span class="line">a.d,a.dcity dcityname,c.city dcity,a.deptm,a.arrtm,a.overdays,a.cap,a.cap cap2,a.tmcal_ori,</span><br><span class="line"><span class="keyword">dateadd</span>(<span class="keyword">MINUTE</span>,-(<span class="number">180</span>+<span class="number">40</span>),tmcal_ori) tmcal <span class="keyword">into</span> <span class="comment">#t2</span></span><br><span class="line"><span class="keyword">from</span> <span class="comment">#t1 a</span></span><br><span class="line"><span class="keyword">left</span> <span class="keyword">join</span> <span class="comment">#tttpm b on a.scity=b.cityname</span></span><br><span class="line"><span class="keyword">left</span> <span class="keyword">join</span> <span class="comment">#tttpm c on a.dcity=c.cityname </span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>可以left join 一个相同的表两次<br>dadeadd（minute,-220,tmcal_ori）这个函数的意思是在tmcal_ori这个字段加上-220分钟。<br>像这种连接是将几个表按行连接到一起，select后面是选取需要的列。<br>2，</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">index</span> index_yd_od_DW_2022gl_bp12 <span class="keyword">on</span> yd_od_DW_2022gl_bp1 (scity,dcity);</span><br><span class="line"> <span class="keyword">select</span> top <span class="number">1</span> @odrn=rn,@wt2=wt2,@s=s,@d=d</span><br><span class="line">    <span class="keyword">from</span> yd_od_DW_2022gl_bp1 <span class="keyword">where</span> wt2&gt;<span class="number">0</span> <span class="keyword">and</span> <span class="keyword">left</span>(scity,<span class="number">3</span>)=@scity <span class="keyword">and</span> <span class="keyword">left</span>(dcity,<span class="number">3</span>)=@dcity <span class="keyword">and</span> tm&lt;=@tmcal   <span class="comment">--tm小于最晚的截货时间 </span></span><br><span class="line">   <span class="keyword">order</span> <span class="keyword">by</span> tm,rn;</span><br></pre></td></tr></table></figure>
+<p>像这种情况实际上索引没有用上，应为在等号左边有一个运算left(scity,3).<br>3，<br>A. 重命名表<br>下例将表 customers 重命名为 custs。 </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EXEC sp_rename &#x27;customers&#x27;, &#x27;custs&#x27; </span><br></pre></td></tr></table></figure>
+
+<p>B. 重命名列<br>下例将表 customers 中的列 contact title 重命名为 title。 </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EXEC sp_rename &#x27;customers.[contact title]&#x27;, &#x27;title&#x27;, &#x27;COLUMN&#x27;</span><br></pre></td></tr></table></figure>
+<p>4,选出首字母不为数字的行，用ascii()函数，字母的ascii码大于数字，9为57，大于57即为字母</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> *</span><br><span class="line"><span class="keyword">from</span> BDP..zzc_air </span><br><span class="line"><span class="keyword">where</span> <span class="keyword">ascii</span>( <span class="keyword">SUBSTRING</span>(Pc,<span class="number">1</span>,<span class="number">1</span>))&gt;<span class="number">57</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--删除临时表#air</span></span><br><span class="line">if exists(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..#air&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">#air;</span></span><br><span class="line"><span class="comment">--删除实体表testsql</span></span><br><span class="line"><span class="keyword">IF</span> <span class="keyword">EXISTS</span>(<span class="keyword">Select</span> <span class="number">1</span> <span class="keyword">From</span> Sysobjects <span class="keyword">Where</span> <span class="keyword">Name</span>=<span class="string">&#x27;testsql&#x27;</span>) <span class="keyword">drop</span> <span class="keyword">table</span> testsql;</span><br><span class="line">if OBJECT_ID(&#x27;sn..testsql&#x27;,&#x27;U&#x27;) is not null <span class="keyword">drop</span> <span class="keyword">table</span> sn..testsql;</span><br></pre></td></tr></table></figure>
+<p>5，sql server查询表zzc_air_gl的字段名，字段类型，和字段长度，查询其他的表则换个表名即可；</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sp_help zzc_air_gl</span><br></pre></td></tr></table></figure>
+<p>6,</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">---找到Sapt中含有空格的字段</span></span><br><span class="line"><span class="keyword">select</span> Sapt <span class="keyword">from</span> AREA_PROJECT..Aptzzc_cover_2025_guoji </span><br><span class="line"><span class="keyword">where</span> <span class="keyword">charindex</span>(<span class="string">&#x27; &#x27;</span>,Sapt)&gt;<span class="number">0</span>;</span><br><span class="line">关于charindex函数参见 https://www.cnblogs.com/qianxingdewoniu/p/6858580.html</span><br><span class="line"><span class="comment">---这一步就是把空格去掉</span></span><br><span class="line"><span class="keyword">update</span> a <span class="keyword">set</span> Sapt=<span class="keyword">replace</span>(Sapt,<span class="string">&#x27; &#x27;</span>,<span class="string">&#x27;&#x27;</span>) <span class="keyword">from</span> AREA_PROJECT..Aptzzc_cover_2025_guoji a <span class="keyword">where</span> <span class="keyword">charindex</span>(<span class="string">&#x27; &#x27;</span>,Sapt)&gt;<span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/%E5%AE%9A%E4%BB%B7%E7%AD%96%E7%95%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/%E5%AE%9A%E4%BB%B7%E7%AD%96%E7%95%A5/" class="post-title-link" itemprop="url">定价策略</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-24 10:50:29" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 09:12:38" itemprop="dateModified" datetime="2020-08-26T09:12:38+08:00">2020-08-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/%E5%AE%9A%E4%BB%B7%E7%AD%96%E7%95%A5/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/%E5%AE%9A%E4%BB%B7%E7%AD%96%E7%95%A5/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">这个文件中的代码实现的是定价策略，根据所投的流向和投的钱来比较哪种策略最好，当然这只是一个简易的版本，</span></span><br><span class="line"><span class="string">没有具体考虑到其它队的具体策略，但依然能够大概看出哪个流向最好。</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line">data = xlrd.open_workbook(<span class="string">r&#x27;d:\user\01378237\桌面\枢纽运营\公司资料\比赛\pricing_info.xlsx&#x27;</span>)</span><br><span class="line">Sheet = data.sheet_by_name(<span class="string">&#x27;pricing_info&#x27;</span>)</span><br><span class="line">i = <span class="number">1</span></span><br><span class="line">code=[]</span><br><span class="line">city = []</span><br><span class="line">price = []</span><br><span class="line">num = []</span><br><span class="line">amount = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        e = Sheet.cell_value(i,<span class="number">0</span>)</span><br><span class="line">        a = Sheet.cell_value(i,<span class="number">1</span>)</span><br><span class="line">        b = Sheet.cell_value(i,<span class="number">2</span>)</span><br><span class="line">        c = Sheet.cell_value(i,<span class="number">3</span>)</span><br><span class="line">        d = Sheet.cell_value(i,<span class="number">4</span>)</span><br><span class="line">        code.append(e)</span><br><span class="line">        city.append(a)</span><br><span class="line">        price.append(b)</span><br><span class="line">        num.append(c)</span><br><span class="line">        amount.append(d)</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"><span class="comment">#print(price)</span></span><br><span class="line">fdict = &#123;&#125;     <span class="comment">#键是城市名，值是一个列表，分别是单价，用户总数，和最大额度限制</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(city)):</span><br><span class="line">    fdict.setdefault(city[i],[]).append(price[i])</span><br><span class="line">    fdict.setdefault(city[i],[]).append(num[i])</span><br><span class="line">    fdict.setdefault(city[i],[]).append(amount[i])</span><br><span class="line"><span class="comment">#print(pdict)</span></span><br><span class="line"></span><br><span class="line">codedict=dict(zip(city,code))  <span class="comment">#这个字典键是城市名，值是序号</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">price_fun</span>(<span class="params">m,n</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    :param m: 城市名称</span></span><br><span class="line"><span class="string">    :param n: 投入的资金数目</span></span><br><span class="line"><span class="string">    :return:   新价格</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    new_price = (fdict.get(m)[<span class="number">0</span>]*fdict.get(m)[<span class="number">1</span>]-n)/fdict.get(m)[<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">return</span> new_price</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">numpeople</span>(<span class="params">m,n</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    用来计算一个流向如果全按最大值投的话可以获得的人数</span></span><br><span class="line"><span class="string">    :param m: 需要投的流向</span></span><br><span class="line"><span class="string">    :param n: 需要投的钱，一般n就是该流向所允许的最大值</span></span><br><span class="line"><span class="string">    :return:  该流向所获得的人数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    new_price = (fdict.get(m)[<span class="number">0</span>] * fdict.get(m)[<span class="number">1</span>] - n) / fdict.get(m)[<span class="number">1</span>]</span><br><span class="line">    a=new_price**(<span class="number">-1.09</span>) + ((fdict.get(m)[<span class="number">0</span>])**(<span class="number">-1.09</span>))*<span class="number">52</span></span><br><span class="line">    b = (fdict.get(m)[<span class="number">1</span>]/a)*new_price**(<span class="number">-1.09</span>)</span><br><span class="line">    c = (fdict.get(m)[<span class="number">1</span>]/a)*(fdict.get(m)[<span class="number">0</span>])**(<span class="number">-1.09</span>)</span><br><span class="line">    d = b-c</span><br><span class="line">    <span class="keyword">return</span> b</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">respeople</span>(<span class="params">m,n</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    这个函数是必须的，它是在全投完之后剩余的那些钱投的流向，这时候的钱已经不够一个完整的流向了</span></span><br><span class="line"><span class="string">    :param m: 需要投的流向</span></span><br><span class="line"><span class="string">    :param n: 需要投的金额</span></span><br><span class="line"><span class="string">    :return: 该流向m可以获得的用户数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    new_price = (fdict.get(m)[<span class="number">0</span>] * fdict.get(m)[<span class="number">1</span>] - n) / fdict.get(m)[<span class="number">1</span>]</span><br><span class="line">    a = new_price ** (<span class="number">-1.09</span>) + ((fdict.get(m)[<span class="number">0</span>]) ** (<span class="number">-1.09</span>)) * <span class="number">52</span></span><br><span class="line">    b = (fdict.get(m)[<span class="number">1</span>] / a) * new_price ** (<span class="number">-1.09</span>)</span><br><span class="line">    <span class="keyword">return</span> b</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">all_people</span>(<span class="params">m</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    #计算全投的那几个流向能够获得的用户数</span></span><br><span class="line"><span class="string">    :param m:   m是需要全投的那几个流向</span></span><br><span class="line"><span class="string">    :return:   全投的那些流向的用户总数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    rnum=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> m:</span><br><span class="line">        realnum = numpeople(i,amount[int(codedict.get(i))])</span><br><span class="line">        rnum.append(realnum)</span><br><span class="line">    c=sum(rnum)</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sur_people</span>(<span class="params">m</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    计算没有投的那些流向所获得的用户数</span></span><br><span class="line"><span class="string">    :param m: 没有投的那些流向</span></span><br><span class="line"><span class="string">    :return: 没有投的那些流向的用户总数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    ynum=[]     <span class="comment">#这个列表里是没有投的那些流向获得的用户数</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> city:</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> m:</span><br><span class="line">            ynum.append(num[int(codedict.get(i))]/<span class="number">53</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">    s=sum(ynum)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">minr=[]</span></span><br><span class="line"><span class="string">cl=[168]</span></span><br><span class="line"><span class="string">for i in city:</span></span><br><span class="line"><span class="string">    if i not in cl:</span></span><br><span class="line"><span class="string">        r=respeople(i,707167)   #r是剩余的钱能够获得的人数</span></span><br><span class="line"><span class="string">        minr.append(r)</span></span><br><span class="line"><span class="string">    else:</span></span><br><span class="line"><span class="string">        pass</span></span><br><span class="line"><span class="string">print(minr.index(max(minr)))</span></span><br><span class="line"><span class="string">print(city[1])</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    stra = [<span class="number">16</span>, <span class="number">35</span>, <span class="number">168</span>]</span><br><span class="line">    c=<span class="number">137</span></span><br><span class="line">    n=<span class="number">707167</span></span><br><span class="line">    print(all_people(stra)+sur_people(stra)+respeople(c,n))</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/" class="post-title-link" itemprop="url">机器学习中的特征工程</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-24 10:50:29" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-25 10:23:39" itemprop="dateModified" datetime="2020-08-25T10:23:39+08:00">2020-08-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">数据科学</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>​在机器学习的模型训练中，特征工程是非常重要的环节，虽然很多机器学习的相关书籍都把重要的篇幅放在了算法上，但是在实际的应用中，特征工程是非常重要的环节，甚至可以说是决定模型结果的关键。关于特征工程有一下几个问题需要搞清楚：1，为什么要进行特征工程 2，进行特征工程的方法有哪些。<br>1，为什么要进行特征工程<br>以非常经典的房价预测为例，影响房价的因素有很多，原始的数据集大约有几十个特征，那么我们这些特征我们都需要吗，可能有些因素与最终的房价相关度并不高，也有可能有的特征直接有冗余，这时就需要我们去掉一些特征。也有可能需要我们去根据现有特征去创造新的特征，面对不同的问题会有不同的解决方案，不可一概而论。<br>特征工程可以说实在寻找一种好的数据表示，初学者可能会有疑问，如果不进项特征工程会怎样，加入把原始的特征全部放到模型中，那么可能有些特征与最终的标签无关，或者关联很小，这样会使训练出来的模型过拟合，也就是特征太多，模型太复杂，这样训练出来的模型往往在训练集上表现很好，但是在测试集中往往表现不佳。这和数据中有大量异常值类似</p>
+
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">机器学习笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-24 10:50:29" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 09:11:51" itemprop="dateModified" datetime="2020-08-26T09:11:51+08:00">2020-08-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">数据科学</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>1,对应缺失数据较少的情况可以用插值法来处理，插值的方法可以是随机森林<br>2，当使用逻辑回归建模时因为需要的特征都是数值型特征，所以会先选择将特征因子化，比如常见的one-hot编码,如下面的例子所示：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dummies_Cabin = pd.get_dummies(data_train[<span class="string">&#x27;Cabin&#x27;</span>], prefix= <span class="string">&#x27;Cabin&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>2,为什么要降维？<br>主要是出于如下考虑：1. 特征维数越高，模型越容易过拟合，此时更复杂的模型就不好用。2. 相互独立的特征维数越高，在模型不变的情况下，在测试集上达到相同的效果表现所需要的训练样本的数目就越大。 3. 特征数量增加带来的训练、测试以及存储的开销都会增大。4.在某些模型中，例如基于距离计算的模型KMeans，KNN等模型，在进行距离计算时，维度过高会影响精度和性能。5.可视化分析的需要。在低维的情况下，例如二维，三维，我们可以把数据绘制出来，可视化地看到数据。当维度增高时，就难以绘制出来了。在机器学习中，有一个非常经典的维度灾难的概念。用来描述当空间维度增加时，分析和组织高维空间，因体积指数增加而遇到各种问题场景。例如，100个平均分布的点能把一个单位区间以每个点距离不超过0.01采样；而当维度增加到10后，如果以相邻点距离不超过0.01小方格采样单位超一单位超正方体，则需要10^20 个采样点。<br>所以特征不是越多越好，过多的特征可能会造成过拟合，增加计算开销<br>3，PCA算法<br>通过协方差矩阵的特征值分解能够得到数据的主成分，以二维特征为例，两个特征之间可能存在线性关系（例如运动的时速和秒速度），这样就造成了第二维信息是冗余的。PCA的目标是发现这种特征之间的线性关系，并去除。<br>4，将缺失值补为0的方法用fillna(0)完成<br>     round([],2)后边的2是保留后两位小数<br>5，</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x_train,x_test,y_train,y_test = train_test_split(train_da, label, test_size=<span class="number">0.15</span>, random_state=<span class="number">2019</span>)</span><br></pre></td></tr></table></figure>
+<p>注意在用上面的来划分训练集合测试集的时候，train_da不是训练集，它是特征，label是标签，训练集里既有特征又有标签<br>x_train:训练集特征<br>x_test:测试集特征<br>y_train:训练集标签<br>y_test:测试集标签</p>
+
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/Blog/page/2/">2</a><a class="extend next" rel="next" href="/Blog/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
+
+
+
+      
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">null </a>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chris</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+<script src="/Blog/js/utils.js"></script><script src="/Blog/js/motion.js"></script><script src="/Blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+  <script src="/Blog/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  const url = element.dataset.target;
+  const pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  const pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  const fullURL = `/Blog/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+  
+
+  
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({
+      el  : '#valine-comments',
+      path: "/Blog/",
+    }, {"enable":true,"appId":"CrJcuzWX512zHBruEOGhDtw9-gzGzoHsz","appKey":"goDG5RA7iUEMNw3heqBvPdAJ","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"serverURLs":null,"enableQQ":false,"requiredFields":[]}
+    ));
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

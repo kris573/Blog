@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/Blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/Blog/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"kris573.github.io","root":"/Blog/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="高磊的博客">
+<meta property="og:url" content="https://kris573.github.io/Blog/page/2/index.html">
+<meta property="og:site_name" content="高磊的博客">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Chris">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://kris573.github.io/Blog/page/2/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>高磊的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/Blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">高磊的博客</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">数据分析与挖掘</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/Blog/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/Blog/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/Blog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/Blog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/Blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/Blog/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/Blog/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chris</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/Blog/archives/">
+        
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/Blog/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/kris573" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;kris573" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </section>
+        <div class="back-to-top animated">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+      
+
+      
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%8D%E8%A6%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%8D%E8%A6%81/" class="post-title-link" itemprop="url">线性函数为什么重要</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-24 10:50:29" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 09:46:21" itemprop="dateModified" datetime="2020-08-26T09:46:21+08:00">2020-08-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">数据科学</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%8D%E8%A6%81/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%8D%E8%A6%81/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="1，线性函数的定义："><a href="#1，线性函数的定义：" class="headerlink" title="1，线性函数的定义："></a>1，线性函数的定义：</h2><p>如果你去查关于线性函数的定义，那么教科书里会说类似于下面的函数可以被称为线性函数<br>$$<br>f(x_i)=a_1x_1+a_2x_2+…a_nx_n<br>$$<br>从数学的角度来说，这似乎不太严谨，直观来看，’线性’和加法与乘法有关，熟悉线性代数的读者应该还记得关于线性空间的定义，所谓的线性空间就与<strong>加性</strong>和<strong>乘性</strong>有关：</p>
+<p><strong>线性空间可以定义为加法和标量乘法的集合V。V上的加法（addition）指的是一个函数，它把每一对 u,v</strong> 都对应到V的一个元素u+v。V上的标量乘法（scalar multiplication）也是一个函数，它把任意<br>$$<br>a\in F,v\in V<br>$$<br>对应到V的一个元素</p>
+<p>这里F是一个域，V称为域F上的线性空间。</p>
+<p>可见，按照如上的定义，系数 <img src="https://www.zhihu.com/equation?tex=a_%7B1%7D" alt="a_{1}">等可以看做F中的元素，而  等可以看做向量空间V中元素。</p>
+<p>按照我们常识的经验，线性函数与所谓‘一次’，‘直线’这样的字眼有关系。比如我们初中就开始接触的一次函数y=kx+b，它与我们定义的线性函数相比只有一个变量，并且多了一个常熟项b，这里要特别强调的一点是，如果在我们定义的线性函数也加一个常数<br>$$<br>\omega<br>$$<br>那么此时的函数便不是线性的，事实上，函数变成<strong>仿射函数</strong>。</p>
+<p>线性模型重要的原因是生活中很多现象都具有‘平滑性’（自然，不允许跳跃），比如人的身高与年龄的关系，年龄越大，身高越高；房价与面积的关系，面积越大，房价越高；汽车价格与排量的关系，排量越高，价格越贵等……</p>
+<p>如果用图像表示则是如下这样的：</p>
+<p><img src="https://pic1.zhimg.com/v2-32b1d1ac3420c5666e427cb3ea44a264_b.png" alt="img"></p>
+<p>图中的横坐标可以表示年龄，面积，排量，纵坐标就是相应的身高，价格等。为了方便，我们举的是单变量的例子，多变量的道理是一样的，比如就房价来说，除了与面积相关，还可能与距地铁站的远近，房屋年龄等因素相关，道理都是一样的。</p>
+
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/page/2/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/24/sql%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/24/sql%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B/" class="post-title-link" itemprop="url">sql存储过程</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-24 10:50:29" itemprop="dateCreated datePublished" datetime="2020-08-24T10:50:29+08:00">2020-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-25 16:13:42" itemprop="dateModified" datetime="2020-08-25T16:13:42+08:00">2020-08-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/24/sql%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/24/sql%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>sql server的存储过程类似于其他编程语言中的函数，可以将常用的逻辑固化下来，将表视为参数，存储过程可以大大提高工作效率。存储过程的启用可以用java或者python语言控制工作流；</p>
+<p>有几个需要注意的点：</p>
+<p>1，提前判断表是否已经存在，否则可能会报错.</p>
+<p>2，字符串拼接时要注意特殊的语法.</p>
+<p>3，可以在存储过程中加入异常捕获，try…catch…这样可以在报错时方便debug.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">USE</span> [SN]</span><br><span class="line"><span class="keyword">GO</span></span><br><span class="line"><span class="comment">/****** Object:  StoredProcedure [dbo].[sp_static_sh_use_time]    Script Date: 04/29/2019 15:17:53 ******/</span></span><br><span class="line"><span class="keyword">SET</span> ANSI_NULLS <span class="keyword">ON</span></span><br><span class="line"><span class="keyword">GO</span></span><br><span class="line"><span class="keyword">SET</span> QUOTED_IDENTIFIER <span class="keyword">ON</span></span><br><span class="line"><span class="keyword">GO</span></span><br><span class="line"><span class="keyword">ALTER</span> PROC [dbo].[sp_static_sh_use_time](</span><br><span class="line">  @table_static_sh_input   <span class="built_in">varchar</span>(<span class="number">50</span>),    <span class="comment">--散航数据的最初输入表</span></span><br><span class="line">  @table_static_sh_output   <span class="built_in">varchar</span>(<span class="number">50</span>) )  <span class="comment">--输出表，是航线剔除的输入</span></span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">drop table static_sh_input_0328;</span></span><br><span class="line"><span class="comment">create table static_sh_input_0328(</span></span><br><span class="line"><span class="comment">cy nvarchar(60),-- 运力名称</span></span><br><span class="line"><span class="comment">cntype nvarchar(60),-- 航班类型</span></span><br><span class="line"><span class="comment">dis nvarchar(60),-- 航班里程</span></span><br><span class="line"><span class="comment">stepflg nvarchar(60),-- 经停标志</span></span><br><span class="line"><span class="comment">craft nvarchar(60),-- 机型</span></span><br><span class="line"><span class="comment">cap nvarchar(60),-- 机型业载</span></span><br><span class="line"><span class="comment">scityname nvarchar(60),-- 始发城市</span></span><br><span class="line"><span class="comment">s nvarchar(60),-- 始发地机场三字码</span></span><br><span class="line"><span class="comment">dcityname nvarchar(60),-- 目的地城市 </span></span><br><span class="line"><span class="comment">d nvarchar(60),-- 目的地机场三字码</span></span><br><span class="line"><span class="comment">workday nvarchar(60),-- 班期</span></span><br><span class="line"><span class="comment">plan_deptm nvarchar(60),-- 计划发出时间</span></span><br><span class="line"><span class="comment">plan_arrtm nvarchar(60),-- 计划到达时间</span></span><br><span class="line"><span class="comment">validdt nvarchar(60),-- 航班生效日期</span></span><br><span class="line"><span class="comment">offdt nvarchar(60),-- 航班失效日期</span></span><br><span class="line"><span class="comment">efftype nvarchar(60),-- 时效性航班类型</span></span><br><span class="line"><span class="comment">ssc nvarchar(60),-- 发货归属网点</span></span><br><span class="line"><span class="comment">dsc nvarchar(60),-- 提货归属网点</span></span><br><span class="line"><span class="comment">overdays nvarchar(60),-- 飞行跨越天数</span></span><br><span class="line"><span class="comment">ccmin nvarchar(60),-- 货站截载时长</span></span><br><span class="line"><span class="comment">lastctm nvarchar(60),-- 货站最晚截载时间</span></span><br><span class="line"><span class="comment">)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">load static_sh_input_0328.txt into static_sh_input_0328</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">-- ============================================================================</span></span><br><span class="line"><span class="keyword">BEGIN</span> TRY</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @<span class="keyword">sql</span> <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line">if exists(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..##t1&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##t1;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span> @<span class="keyword">sql</span> = <span class="string">&#x27;select distinct cntype,cy,efftype,scityname scity,s,dcityname dcity,d,plan_deptm deptm,plan_arrtm arrtm,overdays,</span></span><br><span class="line"><span class="string">cast(cap as numeric(10,5)) cap,left(plan_deptm,2)+&#x27;&#x27;:&#x27;&#x27;+right(plan_deptm,2) tmcal_ori</span></span><br><span class="line"><span class="string">into ##t1 from &#x27;</span> + @table_static_sh_input + <span class="string">&#x27; where overdays&lt;=1 and cap&lt;&gt;&#x27;&#x27;&#x27;&#x27; and stepflg&lt;&gt;N&#x27;</span>+ <span class="string">&#x27;&#x27;&#x27;&#x27;</span>+N<span class="string">&#x27;经停&#x27;</span>+<span class="string">&#x27;&#x27;&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line">exec sp_executesql @sql;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> a <span class="keyword">set</span> cap=cap/<span class="number">1000.0</span> <span class="keyword">from</span> <span class="comment">##t1 a;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">exists</span>(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..##tttpm&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##tttpm;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> cityname,citycode city <span class="keyword">into</span> <span class="comment">##tttpm from publicdb.dbo.city_info;</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="comment">##tttpm select N&#x27;晋江&#x27;,&#x27;595&#x27;</span></span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;义乌&#x27;</span>,<span class="string">&#x27;579&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;大理&#x27;</span>,<span class="string">&#x27;872&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;迪庆&#x27;</span>,<span class="string">&#x27;887&#x27;</span></span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;芒市&#x27;</span>,<span class="string">&#x27;692&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;西昌&#x27;</span>,<span class="string">&#x27;834&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;台湾&#x27;</span>,<span class="string">&#x27;886&#x27;</span></span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;延吉&#x27;</span>,<span class="string">&#x27;433&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;恩施&#x27;</span>,<span class="string">&#x27;718&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;兴义&#x27;</span>,<span class="string">&#x27;859&#x27;</span></span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;万州&#x27;</span>,<span class="string">&#x27;023&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;稻城&#x27;</span>,<span class="string">&#x27;836&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;梅县&#x27;</span>,<span class="string">&#x27;753&#x27;</span></span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;林芝&#x27;</span>,<span class="string">&#x27;894&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;和田&#x27;</span>,<span class="string">&#x27;903&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;富蕴&#x27;</span>,<span class="string">&#x27;906&#x27;</span></span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;塔城&#x27;</span>,<span class="string">&#x27;901&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;甘孜州&#x27;</span>,<span class="string">&#x27;836&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;抚远&#x27;</span>,<span class="string">&#x27;454&#x27;</span></span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;昌都地区&#x27;</span>,<span class="string">&#x27;895&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;库车&#x27;</span>,<span class="string">&#x27;997&#x27;</span> <span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;九寨沟&#x27;</span>,<span class="string">&#x27;837&#x27;</span></span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;日喀则&#x27;</span>,<span class="string">&#x27;892&#x27;</span> </span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;巴音郭楞蒙古自治州/铁门关&#x27;</span>  ,<span class="string">&#x27;996&#x27;</span>    </span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;格尔木&#x27;</span>                     ,<span class="string">&#x27;979&#x27;</span></span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;武夷山&#x27;</span>                     ,<span class="string">&#x27;599&#x27;</span> </span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;阿克苏&#x27;</span>                     ,<span class="string">&#x27;997&#x27;</span>    </span><br><span class="line"><span class="keyword">union</span> <span class="keyword">all</span> <span class="keyword">select</span> N<span class="string">&#x27;西双版纳&#x27;</span>                   ,<span class="string">&#x27;691&#x27;</span> </span><br><span class="line"></span><br><span class="line"><span class="comment">-- select cityname from #tttpm group by cityname having COUNT(1)&gt;1</span></span><br><span class="line"><span class="keyword">delete</span> a <span class="keyword">from</span> <span class="comment">##tttpm a where city=&#x27;OSR&#x27;; -- 香港 852</span></span><br><span class="line"></span><br><span class="line"> <span class="comment">--最晚的截货时间在起飞前三小时四十分钟</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">exists</span>(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..##t2&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##t2;</span></span><br><span class="line"><span class="keyword">select</span> a.cntype,a.cy,a.efftype,a.s,a.scity scityname,b.city scity,</span><br><span class="line">a.d,a.dcity dcityname,c.city dcity,a.deptm,a.arrtm,a.overdays,a.cap,a.cap cap2,a.tmcal_ori,</span><br><span class="line"><span class="keyword">dateadd</span>(<span class="keyword">MINUTE</span>,-(<span class="number">180</span>+<span class="number">40</span>),tmcal_ori) tmcal <span class="keyword">into</span> <span class="comment">##t2</span></span><br><span class="line"><span class="keyword">from</span> <span class="comment">##t1 a</span></span><br><span class="line"><span class="keyword">left</span> <span class="keyword">join</span> <span class="comment">##tttpm b on a.scity=b.cityname</span></span><br><span class="line"><span class="keyword">left</span> <span class="keyword">join</span> <span class="comment">##tttpm c on a.dcity=c.cityname </span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- #t2 where scity is null or dcity is null</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">exists</span>(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..##t3&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##t3;</span></span><br><span class="line"><span class="keyword">select</span> cntype,cy,efftype,s,scityname,scity,d,dcityname,dcity,deptm,arrtm,<span class="keyword">cast</span>(arrtm <span class="keyword">as</span> <span class="built_in">int</span>)-<span class="keyword">cast</span>(deptm <span class="keyword">as</span> <span class="built_in">int</span>) ftm,overdays,</span><br><span class="line">       cap,cap2,<span class="keyword">left</span>(<span class="keyword">cast</span>(<span class="keyword">cast</span>(tmcal <span class="keyword">as</span> <span class="built_in">time</span>) <span class="keyword">as</span> <span class="built_in">varchar</span>(<span class="number">10</span>)),<span class="number">5</span>) tmcal,N<span class="string">&#x27;用于判断散航类型的判断字段&#x27;</span> shtype</span><br><span class="line"> <span class="keyword">into</span> <span class="comment">##t3 from ##t2 ;</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">update</span> <span class="comment">##t3 set tmcal=replace(tmcal,&#x27;:&#x27;,&#x27;&#x27;),shtype=&#x27;&#x27;,ftm=case when ftm&lt;0 then 2400+ftm else ftm end;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 飞行时长过短判断为错误数据</span></span><br><span class="line"><span class="keyword">delete</span> a <span class="keyword">from</span> <span class="comment">##t3 a where ftm&lt;30;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> a <span class="keyword">set</span> shtype=N<span class="string">&#x27;有时效次晨发次晨到晚早散航&#x27;</span>,</span><br><span class="line">tmcal=<span class="keyword">case</span> <span class="keyword">when</span> <span class="keyword">CAST</span>(tmcal <span class="keyword">as</span> <span class="built_in">Int</span>)&lt;<span class="number">2020</span> <span class="keyword">then</span> <span class="keyword">cast</span>((<span class="keyword">CAST</span>(tmcal <span class="keyword">as</span> <span class="built_in">Int</span>)+<span class="number">2400</span>) <span class="keyword">as</span> <span class="built_in">varchar</span>(<span class="number">4</span>)) <span class="keyword">else</span> tmcal <span class="keyword">end</span></span><br><span class="line"><span class="keyword">from</span> <span class="comment">##t3 a </span></span><br><span class="line"><span class="keyword">where</span> deptm&gt;<span class="string">&#x27;0&#x27;</span> <span class="keyword">and</span> deptm&lt;arrtm <span class="keyword">and</span> arrtm&lt;=<span class="string">&#x27;1000&#x27;</span> <span class="keyword">and</span> overdays=<span class="number">0</span> <span class="keyword">and</span> shtype=<span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> a <span class="keyword">set</span> shtype=N<span class="string">&#x27;有时效当天发晚散航&#x27;</span></span><br><span class="line"><span class="keyword">from</span> <span class="comment">##t3 a </span></span><br><span class="line"><span class="keyword">where</span> shtype=<span class="string">&#x27;&#x27;</span> <span class="keyword">and</span> efftype=N<span class="string">&#x27;晚航班&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> a <span class="keyword">set</span> shtype=N<span class="string">&#x27;有时效当日发次晨到早散航&#x27;</span></span><br><span class="line"><span class="keyword">from</span> <span class="comment">##t3 a </span></span><br><span class="line"><span class="keyword">where</span> shtype=<span class="string">&#x27;&#x27;</span> <span class="keyword">and</span> efftype=N<span class="string">&#x27;早航班&#x27;</span> <span class="keyword">and</span> arrtm&lt;<span class="string">&#x27;1000&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- ##t3 where cy=&#x27;G52662D&#x27;  考虑这个是当日发还是次日发？</span></span><br><span class="line"><span class="keyword">update</span> a <span class="keyword">set</span> shtype=N<span class="string">&#x27;无时效次日发早散航&#x27;</span>,tmcal=<span class="keyword">cast</span>((<span class="keyword">CAST</span>(tmcal <span class="keyword">as</span> <span class="built_in">Int</span>)+<span class="number">2400</span>) <span class="keyword">as</span> <span class="built_in">varchar</span>(<span class="number">4</span>))</span><br><span class="line"><span class="keyword">from</span> <span class="comment">##t3 a </span></span><br><span class="line"><span class="keyword">where</span> shtype=<span class="string">&#x27;&#x27;</span> <span class="keyword">and</span> efftype=N<span class="string">&#x27;早航班&#x27;</span> <span class="comment">-- and CAST(tmcal as Int)&lt;2020</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- ##t3 where shtype=N&#x27;有时效次晨发晚早散航&#x27; order by tmcal</span></span><br><span class="line"><span class="keyword">update</span> a <span class="keyword">set</span> shtype=N<span class="string">&#x27;无时效次日发午散航&#x27;</span>,</span><br><span class="line">tmcal=<span class="keyword">case</span> <span class="keyword">when</span> <span class="keyword">CAST</span>(tmcal <span class="keyword">as</span> <span class="built_in">Int</span>)&lt;<span class="number">2020</span> <span class="keyword">then</span> <span class="keyword">cast</span>((<span class="keyword">CAST</span>(tmcal <span class="keyword">as</span> <span class="built_in">Int</span>)+<span class="number">2400</span>) <span class="keyword">as</span> <span class="built_in">varchar</span>(<span class="number">4</span>)) <span class="keyword">else</span> tmcal <span class="keyword">end</span></span><br><span class="line"><span class="keyword">from</span> <span class="comment">##t3 a </span></span><br><span class="line"><span class="keyword">where</span> shtype=<span class="string">&#x27;&#x27;</span> <span class="keyword">and</span> efftype=N<span class="string">&#x27;午航班&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql2 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"><span class="keyword">set</span> @sql2 = <span class="string">&#x27;if OBJECT_ID(&#x27;&#x27;&#x27;</span>+@table_static_sh_output+<span class="string">&#x27;&#x27;&#x27;) is not null drop table &#x27;</span>+ @table_static_sh_output;</span><br><span class="line">exec sp_executesql @sql2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql3 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"><span class="keyword">set</span> @sql3=<span class="string">&#x27;select * into &#x27;</span> +@table_static_sh_output +<span class="string">&#x27; from ##t3;&#x27;</span></span><br><span class="line">exec sp_executesql @sql3;</span><br><span class="line"></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##t1;</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##tttpm;</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##t2;</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##t3;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">END</span> TRY</span><br><span class="line"><span class="keyword">BEGIN</span> CATCH <span class="comment">-- 捕获异常</span></span><br><span class="line">        <span class="keyword">INSERT</span> <span class="keyword">INTO</span> base..tt_proc_log(ErrorProducure, ErrorNumber, ErrorSeverity, ErrorState, ErrorLine, ErrorMessage) </span><br><span class="line">        <span class="keyword">select</span> ERROR_PROCEDURE(), ERROR_NUMBER(),ERROR_SEVERITY(),ERROR_STATE(), ERROR_LINE() , <span class="built_in">text</span> <span class="keyword">as</span> ErrorMessage</span><br><span class="line">         <span class="keyword">from</span> sys.messages <span class="keyword">WHERE</span> message_id=ERROR_NUMBER() <span class="keyword">AND</span> language_id=<span class="number">2052</span></span><br><span class="line"><span class="keyword">END</span> CATCH</span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">USE</span> [SN]</span><br><span class="line"><span class="keyword">GO</span></span><br><span class="line"><span class="comment">/****** Object:  StoredProcedure [dbo].[sp_static_od_use_time]    Script Date: 04/29/2019 15:18:34 ******/</span></span><br><span class="line"><span class="keyword">SET</span> ANSI_NULLS <span class="keyword">ON</span></span><br><span class="line"><span class="keyword">GO</span></span><br><span class="line"><span class="keyword">SET</span> QUOTED_IDENTIFIER <span class="keyword">ON</span></span><br><span class="line"><span class="keyword">GO</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">PROCEDURE</span> [dbo].[sp_static_od_use_time](</span><br><span class="line">       @static_od_zzc_time   <span class="built_in">varchar</span>(<span class="number">50</span>),     <span class="comment">--od分时集货表</span></span><br><span class="line">       @static_Apt_zzc_cover  <span class="built_in">varchar</span>(<span class="number">50</span>),    <span class="comment">--中转场机场对应关系表</span></span><br><span class="line">       @static_Apt_od_cal    <span class="built_in">varchar</span>(<span class="number">50</span>))     <span class="comment">--输出表,od分时集货，散航规划的输入</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">BEGIN</span> TRY</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @<span class="keyword">sql</span> <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line">if exists(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..##city_odwt&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##city_odwt;</span></span><br><span class="line"><span class="keyword">set</span> @<span class="keyword">sql</span>=<span class="string">&#x27;select source_zzc scity,dest_zzc dcity, zzc_tm tm,wt_weight wt1, cum_wt_weight wt,wtall_weight totalweight </span></span><br><span class="line"><span class="string">into ##city_odwt from &#x27;</span> +@static_od_zzc_time; <span class="comment">--中转场分时集货机场到达时间</span></span><br><span class="line"></span><br><span class="line">exec sp_executesql @sql;</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql1 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line">if exists(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..##ci_air&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##ci_air;</span></span><br><span class="line"><span class="keyword">set</span> @sql1=<span class="string">&#x27;select distinct a.*,b.Sapt s,c.Sapt d into ##ci_air from ##city_odwt a</span></span><br><span class="line"><span class="string">	left join &#x27;</span>+@static_Apt_zzc_cover +<span class="string">&#x27; b  </span></span><br><span class="line"><span class="string">		on a.scity=b.Szzc</span></span><br><span class="line"><span class="string">	left join &#x27;</span>+@static_Apt_zzc_cover +<span class="string">&#x27; c</span></span><br><span class="line"><span class="string">		on a.dcity=c.Szzc&#x27;</span></span><br><span class="line">		</span><br><span class="line">exec sp_executesql @sql1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="comment">##ci_air where s is null or d is null;</span></span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="comment">##ci_air where s=d;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">exists</span>(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..##yd_Apt_od_cal_DW&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##yd_Apt_od_cal_DW;</span></span><br><span class="line"><span class="keyword">select</span> ROW_NUMBER()<span class="keyword">over</span>(<span class="keyword">partition</span> <span class="keyword">by</span> <span class="number">1</span> <span class="keyword">order</span> <span class="keyword">by</span> s,d,scity,dcity,tm) rn,</span><br><span class="line">		s,d,scity,dcity,tm,wt1 wt, wt1 wt2 </span><br><span class="line"><span class="keyword">into</span> <span class="comment">##yd_Apt_od_cal_DW </span></span><br><span class="line"><span class="keyword">from</span> <span class="comment">##ci_air;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> a <span class="keyword">set</span> wt=wt/<span class="number">1000.0</span> <span class="keyword">from</span> <span class="comment">##yd_Apt_od_cal_DW a;   --重量由千克改成吨</span></span><br><span class="line"><span class="keyword">update</span> b <span class="keyword">set</span> wt2=wt2/<span class="number">1000.0</span> <span class="keyword">from</span> <span class="comment">##yd_Apt_od_cal_DW b;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql2 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"><span class="keyword">set</span> @sql2 = <span class="string">&#x27;if OBJECT_ID(&#x27;&#x27;&#x27;</span>+@static_Apt_od_cal+<span class="string">&#x27;&#x27;&#x27;) is not null drop table &#x27;</span>+ @static_Apt_od_cal;</span><br><span class="line">exec sp_executesql @sql2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql3 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"><span class="keyword">set</span> @sql3=<span class="string">&#x27;select * into &#x27;</span> +@static_Apt_od_cal +<span class="string">&#x27; from ##yd_Apt_od_cal_DW;&#x27;</span></span><br><span class="line">exec sp_executesql @sql3;</span><br><span class="line"></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##ci_air;</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##city_odwt;</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##yd_Apt_od_cal_DW;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">END</span> TRY</span><br><span class="line">     <span class="keyword">BEGIN</span> CATCH <span class="comment">-- 捕获异常</span></span><br><span class="line">        <span class="keyword">INSERT</span> <span class="keyword">INTO</span> base..tt_proc_log(ErrorProducure, ErrorNumber, ErrorSeverity, ErrorState, ErrorLine, ErrorMessage) </span><br><span class="line">        <span class="keyword">select</span> ERROR_PROCEDURE(), ERROR_NUMBER(),ERROR_SEVERITY(),ERROR_STATE(), ERROR_LINE() , <span class="built_in">text</span> <span class="keyword">as</span> ErrorMessage</span><br><span class="line">         <span class="keyword">from</span> sys.messages <span class="keyword">WHERE</span> message_id=ERROR_NUMBER() <span class="keyword">AND</span> language_id=<span class="number">2052</span></span><br><span class="line">     <span class="keyword">END</span> CATCH</span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">USE</span> [SN]</span><br><span class="line"><span class="keyword">GO</span></span><br><span class="line"><span class="comment">/****** Object:  StoredProcedure [dbo].[sp_civil_aviation_planning]    Script Date: 04/29/2019 15:19:23 ******/</span></span><br><span class="line"><span class="keyword">SET</span> ANSI_NULLS <span class="keyword">ON</span></span><br><span class="line"><span class="keyword">GO</span></span><br><span class="line"><span class="keyword">SET</span> QUOTED_IDENTIFIER <span class="keyword">ON</span></span><br><span class="line"><span class="keyword">GO</span></span><br><span class="line"><span class="keyword">ALTER</span> PROC [dbo].[sp_civil_aviation_planning](</span><br><span class="line">       @static_sh_use   <span class="built_in">varchar</span>(<span class="number">50</span>),</span><br><span class="line">       @static_od_volume  <span class="built_in">varchar</span>(<span class="number">50</span>),</span><br><span class="line">       @p_sh_DW_time      <span class="built_in">varchar</span>(<span class="number">50</span>),</span><br><span class="line">       @p_yd_deal_DW_time  <span class="built_in">varchar</span>(<span class="number">50</span>),</span><br><span class="line">       @yd_od_DW_time      <span class="built_in">varchar</span>(<span class="number">50</span>)  )</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">BEGIN</span> TRY</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @<span class="keyword">sql</span> <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"></span><br><span class="line">if exists(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..##p_sh_DW&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##p_sh_DW;</span></span><br><span class="line"><span class="keyword">set</span> @<span class="keyword">sql</span>=<span class="string">&#x27;select row_number()over(partition by 1 order by efftype desc,tmcal) rn,</span></span><br><span class="line"><span class="string">       cy,efftype,s,scityname,scity,d,dcityname,dcity,deptm,arrtm,cap,cap2,tmcal,shtype,</span></span><br><span class="line"><span class="string">       case when shtype=N&#x27;</span>+<span class="string">&#x27;&#x27;&#x27;&#x27;</span>+N<span class="string">&#x27;有时效当天发晚散航&#x27;</span>+<span class="string">&#x27;&#x27;&#x27;&#x27;</span>+<span class="string">&#x27; and deptm&gt;=arrtm then &#x27;&#x27;2&#x27;&#x27; +arrtm </span></span><br><span class="line"><span class="string">            when shtype like N&#x27;</span>+<span class="string">&#x27;&#x27;&#x27;&#x27;</span>+N<span class="string">&#x27;%次晨到%&#x27;</span>+<span class="string">&#x27;&#x27;&#x27;&#x27;</span>+<span class="string">&#x27; then &#x27;&#x27;2&#x27;&#x27;+arrtm</span></span><br><span class="line"><span class="string">            else &#x27;&#x27;1&#x27;&#x27; +arrtm end arrtm_cal,cast(0 as int) initflg</span></span><br><span class="line"><span class="string">into ##p_sh_DW from &#x27;</span> +  @static_sh_use + <span class="string">&#x27; where shtype like N&#x27;</span>+<span class="string">&#x27;&#x27;&#x27;&#x27;</span>+N<span class="string">&#x27;%有时效%&#x27;</span>+<span class="string">&#x27;&#x27;&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line">exec sp_executesql @sql;</span><br><span class="line"></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">index</span> index_<span class="comment">##p_sh_DW on ##p_sh_DW (rn);</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql1 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"></span><br><span class="line">if exists(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..##yd_od_DW&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##yd_od_DW;</span></span><br><span class="line"><span class="keyword">set</span> @sql1=<span class="string">&#x27;select row_number()over(partition by 1 order by prd,s,d,scity,dcity,tm) rn,</span></span><br><span class="line"><span class="string">       case when s&lt;=d then s else d end + &#x27;&#x27;-&#x27;&#x27; + case when s&lt;=d then d else s end line,</span></span><br><span class="line"><span class="string">       0 p2pflg,s,d,cast(scity as varchar(5)) scity,cast(dcity as varchar(5)) dcity,prd,tm,wt,wt as wt2 ,left(scity,3) as nscity,left(dcity,3) as ndcity </span></span><br><span class="line"><span class="string">       into ##yd_od_DW</span></span><br><span class="line"><span class="string">       from (</span></span><br><span class="line"><span class="string">       select s,d,scity,dcity,&#x27;&#x27;1Dom&#x27;&#x27; prd,tm,wt,left(scity,3) as nscity,left(dcity,3) as ndcity from &#x27;</span> +@static_od_volume+ <span class="string">&#x27;) xx &#x27;</span>; </span><br><span class="line"><span class="comment">-- where s not in (&#x27;TPE&#x27;,&#x27;HKG&#x27;) and d not in (&#x27;TPE&#x27;,&#x27;HKG&#x27;);</span></span><br><span class="line"></span><br><span class="line">exec sp_executesql @sql1;</span><br><span class="line"></span><br><span class="line"><span class="comment">--给这些字段增加索引，是为了加快查询的速度。</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">index</span> index_<span class="comment">##yd_od_DW1 on ##yd_od_DW (rn);</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">index</span> index_<span class="comment">##yd_od_DW2 on ##yd_od_DW (scity,dcity);--因为这两个字段经常会在where字句中联合使用，所以建立联合索引。</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">index</span> index_<span class="comment">##yd_od_DW3 on ##yd_od_DW (s,d);</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">-- DEAL:</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">exists</span>(<span class="keyword">select</span> * <span class="keyword">from</span> tempdb..sysobjects <span class="keyword">where</span> <span class="keyword">id</span>=object_id(<span class="string">&#x27;tempdb..##p_yd_deal_DW&#x27;</span>)) <span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##p_yd_deal_DW;</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> <span class="comment">##p_yd_deal_DW(</span></span><br><span class="line">odrn <span class="built_in">int</span>,s <span class="built_in">varchar</span>(<span class="number">10</span>),d <span class="built_in">varchar</span>(<span class="number">10</span>),scity <span class="built_in">varchar</span>(<span class="number">10</span>),dcity <span class="built_in">varchar</span>(<span class="number">10</span>),prd <span class="built_in">varchar</span>(<span class="number">10</span>),tm <span class="built_in">varchar</span>(<span class="number">10</span>),wtall <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">5</span>),</span><br><span class="line">wt <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">5</span>),cyrn <span class="built_in">int</span>,dealflg <span class="built_in">int</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">--set xact_abort on;</span></span><br><span class="line"><span class="comment">--begin tran;</span></span><br><span class="line"><span class="keyword">declare</span> @shrn <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">0</span>),@s <span class="built_in">varchar</span>(<span class="number">10</span>),@scity <span class="built_in">varchar</span>(<span class="number">10</span>),</span><br><span class="line">@d <span class="built_in">varchar</span>(<span class="number">10</span>),@dcity <span class="built_in">varchar</span>(<span class="number">10</span>),@tmcal <span class="built_in">varchar</span>(<span class="number">10</span>),</span><br><span class="line">@cap2 <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">5</span>), @odrn <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">0</span>),@wt2 <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">5</span>), @tempResult <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">5</span>),</span><br><span class="line">@deal <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">5</span>),@doneflg <span class="built_in">int</span>;</span><br><span class="line"><span class="keyword">set</span> @doneflg=<span class="number">0</span>;  <span class="keyword">set</span> @shrn=<span class="number">0</span>;  <span class="keyword">set</span> @odrn=<span class="number">0</span>;</span><br><span class="line">while @doneflg=0</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">select</span> top <span class="number">1</span> @shrn=rn,@cap2=cap2,@scity=scity,@dcity=dcity,@tmcal=tmcal</span><br><span class="line">    <span class="keyword">from</span> <span class="comment">##p_sh_DW where cap2&gt;0 and initflg=0 order by arrtm_cal,rn;</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">set</span> @tempResult = @cap2;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">DECLARE</span> cursor_test <span class="keyword">CURSOR</span> <span class="keyword">FOR</span></span><br><span class="line">	<span class="keyword">SELECT</span> rn, wt2, s, d <span class="keyword">FROM</span> <span class="comment">##yd_od_DW</span></span><br><span class="line">	<span class="keyword">where</span> wt2&gt;<span class="number">0</span> <span class="keyword">and</span> prd <span class="keyword">like</span> <span class="string">&#x27;1%&#x27;</span> <span class="keyword">and</span> nscity = @scity <span class="keyword">and</span> ndcity = @dcity <span class="keyword">and</span> tm&lt;= @tmcal <span class="comment">--时刻注意取出来的货量是和散航匹配的</span></span><br><span class="line">	<span class="keyword">order</span> <span class="keyword">by</span> tm,rn;</span><br><span class="line">	OPEN cursor_test</span><br><span class="line">	FETCH NEXT FROM cursor_test INTO @odrn, @wt2, @s, @d</span><br><span class="line">	if(@shrn&gt;0 and @odrn&gt;0) begin</span><br><span class="line">		WHILE @@FETCH_STATUS=0</span><br><span class="line">		 <span class="keyword">BEGIN</span> </span><br><span class="line">		    <span class="keyword">set</span> @deal=<span class="keyword">case</span> <span class="keyword">when</span> @wt2&lt;=@tempResult <span class="keyword">then</span> @wt2 <span class="keyword">else</span> @tempResult <span class="keyword">end</span>;   <span class="comment">--@deal是@wt2和@tempResult中较小的一个</span></span><br><span class="line">		    if( @tempResult&gt;0 and @deal &gt;0) </span><br><span class="line">		     <span class="keyword">begin</span></span><br><span class="line">			  <span class="keyword">insert</span> <span class="keyword">into</span> <span class="comment">##p_yd_deal_DW(odrn,cyrn,wt,dealflg) select @odrn,@shrn,@deal,2;</span></span><br><span class="line">			  <span class="keyword">update</span> <span class="comment">##yd_od_DW set wt2=wt2-@deal where rn=@odrn;</span></span><br><span class="line">			  <span class="keyword">set</span> @tempResult = @tempResult - @deal;</span><br><span class="line">			 <span class="keyword">end</span></span><br><span class="line">			<span class="keyword">FETCH</span> <span class="keyword">NEXT</span> <span class="keyword">FROM</span> cursor_test <span class="keyword">INTO</span> @odrn, @wt2, @s, @d</span><br><span class="line">		 <span class="keyword">END</span></span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line">	<span class="keyword">CLOSE</span> cursor_test</span><br><span class="line">	<span class="keyword">DEALLOCATE</span> cursor_test;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">--print @cap2</span></span><br><span class="line">	<span class="comment">--print &#x27;@tempResult&#x27;</span></span><br><span class="line">	<span class="comment">--print @tempResult</span></span><br><span class="line">	</span><br><span class="line">    if(@shrn &gt; 0) begin</span><br><span class="line">     <span class="keyword">update</span> <span class="comment">##p_sh_DW set initflg=1, cap2 = @tempResult where rn=@shrn;  --当散航资源还有,货已经运完了,就把设initflg=1，如果散航资源没了，就设为0</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">   </span><br><span class="line">   <span class="keyword">if</span>(@shrn=<span class="number">0</span>) <span class="keyword">begin</span> <span class="keyword">set</span> @doneflg=<span class="number">1</span>; <span class="keyword">end</span>     </span><br><span class="line">  </span><br><span class="line">   <span class="keyword">set</span> @shrn=<span class="number">0</span>;<span class="keyword">set</span> @odrn=<span class="number">0</span>; <span class="comment">--最后要对@shrn和@odrn重新进行一次初始化</span></span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"><span class="comment">--commit tran;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> a <span class="keyword">set</span> a.s=b.s,a.d=b.d,a.scity=b.scity,a.dcity=b.dcity,a.prd=b.prd,a.tm=b.tm,a.wtall=b.wt</span><br><span class="line"><span class="keyword">from</span> <span class="comment">##p_yd_deal_DW a join ##yd_od_DW b on a.odrn=b.rn and a.s is null;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">--接下来再按站点的维度剔</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> <span class="comment">##p_sh_DW set initflg=0;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">--set xact_abort on;</span></span><br><span class="line"><span class="comment">--begin tran;</span></span><br><span class="line"><span class="keyword">declare</span> @shrn1 <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">0</span>),@s1 <span class="built_in">varchar</span>(<span class="number">10</span>),@scity1 <span class="built_in">varchar</span>(<span class="number">10</span>),</span><br><span class="line">@d1 <span class="built_in">varchar</span>(<span class="number">10</span>),@dcity1 <span class="built_in">varchar</span>(<span class="number">10</span>),@tmcal1 <span class="built_in">varchar</span>(<span class="number">10</span>),</span><br><span class="line">@cap21 <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">5</span>), @odrn1 <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">0</span>),@wt21 <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">5</span>), @tempResult1 <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">5</span>),</span><br><span class="line">@deal1 <span class="built_in">numeric</span>(<span class="number">10</span>,<span class="number">5</span>),@doneflg1 <span class="built_in">int</span>;</span><br><span class="line"><span class="keyword">set</span> @doneflg1=<span class="number">0</span>;  <span class="keyword">set</span> @shrn1=<span class="number">0</span>;  <span class="keyword">set</span> @odrn1=<span class="number">0</span>;</span><br><span class="line">while @doneflg1=0</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">select</span> top <span class="number">1</span> @shrn1=rn,@cap21=cap2,@s1=s,@d1=d,@tmcal1=tmcal</span><br><span class="line">    <span class="keyword">from</span> <span class="comment">##p_sh_DW where cap2&gt;0 and initflg=0 order by arrtm_cal,rn;</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">set</span> @tempResult1 = @cap21;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">DECLARE</span> cursor_test <span class="keyword">CURSOR</span> <span class="keyword">FOR</span></span><br><span class="line">	<span class="keyword">SELECT</span> rn, wt2 <span class="keyword">FROM</span> <span class="comment">##yd_od_DW</span></span><br><span class="line">	<span class="keyword">where</span> wt2&gt;<span class="number">0</span> <span class="keyword">and</span> prd <span class="keyword">like</span> <span class="string">&#x27;1%&#x27;</span> <span class="keyword">and</span> s=@s1 <span class="keyword">and</span> d=@d1 <span class="keyword">and</span> tm&lt;= @tmcal1 </span><br><span class="line">	<span class="keyword">order</span> <span class="keyword">by</span> tm,rn;</span><br><span class="line">	OPEN cursor_test</span><br><span class="line">	FETCH NEXT FROM cursor_test INTO @odrn1, @wt21</span><br><span class="line">	if(@shrn1&gt;0 and @odrn1&gt;0) begin</span><br><span class="line">		WHILE @@FETCH_STATUS=0</span><br><span class="line">		 <span class="keyword">BEGIN</span> </span><br><span class="line">			<span class="keyword">set</span> @deal1=<span class="keyword">case</span> <span class="keyword">when</span> @wt21&lt;=@tempResult1 <span class="keyword">then</span> @wt21 <span class="keyword">else</span> @tempResult1 <span class="keyword">end</span>;   <span class="comment">--@deal是@wt2和@cap2中较小的一个</span></span><br><span class="line">		    if( @tempResult1&gt;0 and @deal1 &gt;0) </span><br><span class="line">		    <span class="keyword">begin</span></span><br><span class="line">			 <span class="keyword">insert</span> <span class="keyword">into</span> <span class="comment">##p_yd_deal_DW(odrn,cyrn,wt,dealflg) select @odrn1,@shrn1,@deal1,2;</span></span><br><span class="line">			 <span class="keyword">update</span> <span class="comment">##yd_od_DW set wt2=wt2-@deal1 where rn=@odrn1;</span></span><br><span class="line">			 <span class="comment">--update ##p_sh_DW set cap2=cap2-@deal where rn=@shrn;</span></span><br><span class="line">			 <span class="keyword">set</span> @tempResult1 = @tempResult1 - @deal1;</span><br><span class="line">			<span class="keyword">end</span> </span><br><span class="line">			<span class="keyword">FETCH</span> <span class="keyword">NEXT</span> <span class="keyword">FROM</span> cursor_test <span class="keyword">INTO</span> @odrn1, @wt21</span><br><span class="line">		 <span class="keyword">END</span></span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line">	<span class="keyword">CLOSE</span> cursor_test</span><br><span class="line">	<span class="keyword">DEALLOCATE</span> cursor_test;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">--print @cap2</span></span><br><span class="line">	<span class="comment">--print &#x27;@tempResult&#x27;</span></span><br><span class="line">	<span class="comment">--print @tempResult</span></span><br><span class="line">	</span><br><span class="line">    if(@shrn1 &gt; 0) begin</span><br><span class="line">     <span class="keyword">update</span> <span class="comment">##p_sh_DW set initflg=1, cap2 = @tempResult1 where rn=@shrn1;  --当散航资源还有,货已经运完了,就把设initflg=1，如果散航资源没了，就设为0</span></span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    </span><br><span class="line">    if(@shrn1=0) <span class="keyword">begin</span> <span class="keyword">set</span> @doneflg1=<span class="number">1</span>; <span class="keyword">end</span>;     </span><br><span class="line">  </span><br><span class="line">   <span class="keyword">set</span> @shrn1=<span class="number">0</span>;<span class="keyword">set</span> @odrn1=<span class="number">0</span>; <span class="comment">--最后要对@shrn和@odrn重新进行一次初始化</span></span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"><span class="comment">--commit tran;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql2 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"><span class="keyword">set</span> @sql2 = <span class="string">&#x27;if OBJECT_ID(&#x27;&#x27;&#x27;</span>+@p_sh_DW_time+<span class="string">&#x27;&#x27;&#x27;) is not null drop table &#x27;</span>+ @p_sh_DW_time;</span><br><span class="line">exec sp_executesql @sql2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql3 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"><span class="keyword">set</span> @sql3=<span class="string">&#x27;select * into &#x27;</span> +@p_sh_DW_time +<span class="string">&#x27; from ##p_sh_DW;&#x27;</span></span><br><span class="line">exec sp_executesql @sql3;</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql4 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"><span class="keyword">set</span> @sql4 = <span class="string">&#x27;if OBJECT_ID(&#x27;&#x27;&#x27;</span>+@p_yd_deal_DW_time+<span class="string">&#x27;&#x27;&#x27;) is not null drop table &#x27;</span>+ @p_yd_deal_DW_time;</span><br><span class="line">exec sp_executesql @sql4;</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql5 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"><span class="keyword">set</span> @sql5=<span class="string">&#x27;select * into &#x27;</span> +@p_yd_deal_DW_time +<span class="string">&#x27; from ##p_yd_deal_DW;&#x27;</span></span><br><span class="line">exec sp_executesql @sql5;</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql6 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"><span class="keyword">set</span> @sql6 = <span class="string">&#x27;if OBJECT_ID(&#x27;&#x27;&#x27;</span>+@yd_od_DW_time+<span class="string">&#x27;&#x27;&#x27;) is not null drop table &#x27;</span>+ @yd_od_DW_time;</span><br><span class="line">exec sp_executesql @sql6;</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> @sql7 <span class="keyword">as</span> <span class="keyword">nvarchar</span>(<span class="keyword">max</span>);</span><br><span class="line"><span class="keyword">set</span> @sql7=<span class="string">&#x27;select * into &#x27;</span> +@yd_od_DW_time  +<span class="string">&#x27; from ##yd_od_DW;&#x27;</span></span><br><span class="line">exec sp_executesql @sql7;</span><br><span class="line"></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##p_sh_DW;</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##p_yd_deal_DW;</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> <span class="comment">##yd_od_DW;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">END</span> TRY</span><br><span class="line"><span class="keyword">BEGIN</span> CATCH <span class="comment">-- 捕获异常</span></span><br><span class="line">        <span class="keyword">INSERT</span> <span class="keyword">INTO</span> base..tt_proc_log(ErrorProducure, ErrorNumber, ErrorSeverity, ErrorState, ErrorLine, ErrorMessage) </span><br><span class="line">        <span class="keyword">select</span> ERROR_PROCEDURE(), ERROR_NUMBER(),ERROR_SEVERITY(),ERROR_STATE(), ERROR_LINE() , <span class="built_in">text</span> <span class="keyword">as</span> ErrorMessage</span><br><span class="line">         <span class="keyword">from</span> sys.messages <span class="keyword">WHERE</span> message_id=ERROR_NUMBER() <span class="keyword">AND</span> language_id=<span class="number">2052</span></span><br><span class="line"><span class="keyword">END</span> CATCH</span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/page/2/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/23/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/23/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/" class="post-title-link" itemprop="url">工作感悟</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-23 10:55:39" itemprop="dateCreated datePublished" datetime="2020-08-23T10:55:39+08:00">2020-08-23</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/23/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/23/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/page/2/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/23/%E7%9C%8B%E6%88%BF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/23/%E7%9C%8B%E6%88%BF/" class="post-title-link" itemprop="url">看房</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-08-23 10:52:30 / Modified: 10:54:26" itemprop="dateCreated datePublished" datetime="2020-08-23T10:52:30+08:00">2020-08-23</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/23/%E7%9C%8B%E6%88%BF/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/23/%E7%9C%8B%E6%88%BF/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>今天是周六，下午孩子睡了，我和老婆没事儿聊起来看房子的事情，本来结婚后也没有买房，一直和父母住在一起，主要是可以帮忙照看孩子，但也不是长久之计，毕竟也快30了，我这个年纪的基本上也都是还房贷的打工仔，看看房子也可以给工作增加一点动力。</p>
+<p>说走就走，我和老婆开车来到高碑店东站附近，来这个区位主要是我在北京上班，需要来回跑，通了高铁之后方便很多，这样下了高铁就到家了，很方便。我们先看的是万科的房子，有高层和洋房可选，面积适中，90和110的，我们看了110的样本房，感觉装修的还不错，他家的房子主打的就是带装修，不是常见的毛坯房，这在我们这种小县城还是个新鲜玩意儿，不过据说在大城市都已经普及了。看完之后，销售很热情的给我们介绍了其他的一些配套设施，比如医院，教育，物业，绿化等。因为小区还在建设当中，这附近也属于新开发的地段，前景是很好的，只不过目前的配套还不是很完善，以后肯定会越来越好。聊了下价格就撤了，改换隔壁的昊龙阖府。</p>
+<p>这是一家本地的开发商，他家的是毛坯房，赠送车位，价格也相对万科便宜一些，只不过他家的销售态度不好，进去之后就简单介绍了一下区位和目前在售的房型就草草了事，也没有样板间可以看，总体来说体验不如上一家。也许房子的质量不错，但销售的态度也是我们考虑的重要方面。</p>
+<p>看完之后时间也不早了，孩子在家也不放心，就开车回去了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/page/2/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/23/%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/23/%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">集成学习</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-23 10:52:30" itemprop="dateCreated datePublished" datetime="2020-08-23T10:52:30+08:00">2020-08-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 09:10:59" itemprop="dateModified" datetime="2020-08-26T09:10:59+08:00">2020-08-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Blog/category/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">数据科学</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/23/%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/23/%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>集成学习有两点非常重要，1，每一个基分类器是如何生成的。2，这些基分类器是如何组合的。<br><strong>Adaboost算法</strong><br>Adaboost算法用于分类任务，最后的强分类器等于几个带不同权重的分类器之和，误差率越小那么该弱分类器的权重越大；在首次训练时，每个样本的权重一样，为1/m，m为样本个数。每次迭代后，更新样本权重，其中分错的样本增加权重，以获得更多关注，分对的样本相应降低权重。<br>之所以增加错误样本的权重会使错分的概率降低，是因为我们定义的误差为：错误样本的权重之和，我们的目标是使该误差最小。<br>还有</p>
+
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/page/2/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kris573.github.io/Blog/2020/08/23/%E5%BD%93%E7%88%B6%E4%BA%B2%E4%B9%8B%E5%90%8E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Blog/images/avatar.gif">
+      <meta itemprop="name" content="Chris">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高磊的博客">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Blog/2020/08/23/%E5%BD%93%E7%88%B6%E4%BA%B2%E4%B9%8B%E5%90%8E/" class="post-title-link" itemprop="url">当父亲之后</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-08-23 10:45:00" itemprop="dateCreated datePublished" datetime="2020-08-23T10:45:00+08:00">2020-08-23</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Blog/2020/08/23/%E5%BD%93%E7%88%B6%E4%BA%B2%E4%B9%8B%E5%90%8E/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Blog/2020/08/23/%E5%BD%93%E7%88%B6%E4%BA%B2%E4%B9%8B%E5%90%8E/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+      
+    <div>
+	  <p id="div-border-left-red">
+	   <b>本文基于<a target="_blank" title="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" href="http://creativecommons.org/licenses/by-sa/4.0/"> 知识共享署名-相同方式共享 4.0 </a>国际许可协议发布</b><br/>
+	    <span>
+	    <b>本文地址：</b><a href="/Blog/page/2/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	  </p>
+	</div>
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/Blog/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/Blog/">1</a><span class="page-number current">2</span>
+  </nav>
+
+
+
+      
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">null </a>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chris</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+<script src="/Blog/js/utils.js"></script><script src="/Blog/js/motion.js"></script><script src="/Blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+  <script src="/Blog/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  const url = element.dataset.target;
+  const pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  const pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  const fullURL = `/Blog/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+  
+
+  
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({
+      el  : '#valine-comments',
+      path: "/Blog/page/2/",
+    }, {"enable":true,"appId":"CrJcuzWX512zHBruEOGhDtw9-gzGzoHsz","appKey":"goDG5RA7iUEMNw3heqBvPdAJ","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"serverURLs":null,"enableQQ":false,"requiredFields":[]}
+    ));
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
