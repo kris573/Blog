@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Pycharm快捷键</title>
-    <url>/Blog/2020/08/24/Pycharm%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <url>/blog/2020/08/24/Pycharm%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
     <content><![CDATA[<ol>
 <li>快速查看库源码  Ctrl+B</li>
 <li>快速换行    Ctrl+enter</li>
@@ -22,7 +22,7 @@
   </entry>
   <entry>
     <title>gurobi安装和使用</title>
-    <url>/Blog/2020/08/24/gurobi%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
+    <url>/blog/2020/08/24/gurobi%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p> 最近领了一个任务是用一下gurobi,因为我们组以前只用cplex，最近在考虑要不要买gurobi的权限，所以要我先试用一下。<br>   安装下载页确实费了一番功夫，因为公司网的原因，始终无法下载成功，最后还是找其他组的同事要了一个安装包才成功装上。装上之后需要有licence，因为在企业的网，不是校园网，所以网上申请的学术版Licence其实不能用。好在我联系了gurobi中国区的代理公司，他们很热情，给了我一个激活文件，放到了c:\gurobi目录下，成功进行了安装。<br>   关于使用心得后续会继续进行跟进。</p>
 <p>过了快一年，现在来更新一下，这一年多来其实没怎么用gurobi，我又换了一家公司，主要做数据相关，不过gurobi的用起来还是非常不错，主要是官网上有很多配套的视频和文档，而且软件配套的也会有很多的例子，可以多看看，基本的语法和用法都可以熟悉，接下来的难度主要是如何把实际的项目用计算机的语言描述，这一点非常关键。</p>
 ]]></content>
@@ -32,7 +32,7 @@
   </entry>
   <entry>
     <title>join与left join</title>
-    <url>/Blog/2020/08/24/join%E4%B8%8Eleft%20join/</url>
+    <url>/blog/2020/08/24/join%E4%B8%8Eleft%20join/</url>
     <content><![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> dm_snyy.exception_waybillno <span class="keyword">as</span>   <span class="comment">#有了as就相当于建好表，不用写into语句</span></span><br><span class="line"><span class="keyword">select</span> waybillno <span class="keyword">from</span> ods_awsm.awsm_exception_monitor</span><br><span class="line"><span class="keyword">where</span> SYS_CODE=<span class="string">&#x27;BDP&#x27;</span> <span class="keyword">and</span> EXCEPTION_TYPE=<span class="number">15</span> <span class="keyword">and</span> create_time <span class="keyword">BETWEEN</span> <span class="string">&#x27;2019-01-01&#x27;</span> <span class="keyword">and</span> <span class="string">&#x27;2019-01-10&#x27;</span> <span class="keyword">and</span> inc_day&gt;<span class="string">&#x27;20181231&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">from</span> dm_snyy.exception_waybillno  <span class="comment">#这个表里是2019-01-01到2019-01-10的所有异常运单数据</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> waybill_id,waybill_no,source_zone_code,dest_zone_code</span><br><span class="line"><span class="keyword">from</span> ods_shiva_oms.tt_operation_waybill </span><br><span class="line"><span class="keyword">LIMIT</span> <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">TABLE</span> dm_snyy.operation_waybill</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> dm_snyy.operation_waybill <span class="keyword">as</span> </span><br><span class="line"><span class="keyword">SELECT</span> waybill_no,source_zone_code,dest_zone_code</span><br><span class="line"><span class="keyword">from</span> ods_shiva_oms.tt_operation_waybill</span><br><span class="line"><span class="keyword">where</span> inc_day <span class="keyword">BETWEEN</span> <span class="string">&#x27;20190101&#x27;</span> <span class="keyword">and</span> <span class="string">&#x27;20190110&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">from</span> dm_snyy.operation_waybill</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> d.waybillno,o.source_zone_code,o.dest_zone_code</span><br><span class="line"><span class="keyword">from</span> dm_snyy.exception_waybillno d <span class="keyword">join</span> dm_snyy.operation_waybill o</span><br><span class="line"><span class="keyword">on</span> d.waybillno=o.waybill_no</span><br><span class="line"><span class="keyword">and</span> o.source_zone_code <span class="keyword">like</span> <span class="string">&#x27;010%&#x27;</span> <span class="keyword">and</span> o.dest_zone_code <span class="keyword">like</span> <span class="string">&#x27;028%&#x27;</span>;</span><br></pre></td></tr></table></figure>
 <p>注意最后的join和left join的差别<br>最后之所以用join是因为join相当于inner join ,join是只有两个表都有字段时才会显示，最后只会显示北京到成都的；<br>而left join不一样，他会根据左侧表有的字段来显示，在此例中异常表的运单号在右侧正常运单号里有的就会显示，不管是不是北京发往成都的。<br>最后要用and，不用where，这里要注意on和where的用法，where在on之后起筛选的作用，on只是关联条件，无筛选作用；而where有筛选的作用。</p>
 ]]></content>
@@ -42,7 +42,7 @@
   </entry>
   <entry>
     <title>python处理图片</title>
-    <url>/Blog/2020/08/24/python%E5%A4%84%E7%90%86%E5%9B%BE%E7%89%87/</url>
+    <url>/blog/2020/08/24/python%E5%A4%84%E7%90%86%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> PIL</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line">file = (<span class="string">r&#x27;d:\user\01378237\桌面\river.jpg&#x27;</span>)</span><br><span class="line">img = Image.open(file,mode=<span class="string">&#x27;r&#x27;</span>)</span><br><span class="line">box = (<span class="number">10</span>,<span class="number">10</span>,<span class="number">500</span>,<span class="number">500</span>)</span><br><span class="line">region = img.crop(box)</span><br><span class="line">region.save(<span class="string">r&#x27;d:\user\01378237\桌面\cutting.jpg&#x27;</span>)</span><br><span class="line"><span class="comment">#img.show()</span></span><br><span class="line"><span class="keyword">print</span> (<span class="string">&#x27;img format: &#x27;</span>, img.format) <span class="comment"># 打印图像格式</span></span><br><span class="line"><span class="keyword">print</span> (<span class="string">&#x27;img size: &#x27;</span>, img.size) <span class="comment"># 打印图像尺寸</span></span><br><span class="line"><span class="keyword">print</span> (<span class="string">&#x27;img mode: &#x27;</span>, img.mode)</span><br><span class="line">img_gray = img.convert(<span class="string">&#x27;F&#x27;</span>) <span class="comment"># 转换为灰度模式</span></span><br><span class="line">img_gray.show() <span class="comment">#</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>编程</category>
@@ -50,7 +50,7 @@
   </entry>
   <entry>
     <title>python编程总结</title>
-    <url>/Blog/2020/08/24/python%E7%BC%96%E7%A8%8B%E6%80%BB%E7%BB%93/</url>
+    <url>/blog/2020/08/24/python%E7%BC%96%E7%A8%8B%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p>1，在python当中一切皆对象,每产生一个对象会对应三个属性:id、类型type和数值<br>2，创建一个类就会创建一个类的名称空间，用来存储类中定义的所有名字，这些名字称为类的属性：而类中有两种属性：数据属性和函数属性，其中类的数据属性是共享给所有对象的，而类的函数属性是绑定到所有对象的。  3，在类的内部来说,__init__是类的函数属性,但是对于对象来说,就是绑定方法。<br> 4，命名空间的问题:先从对象的命名空间找,随后在从类的命名空间找,随后在从父类的命名<br>空间找。<br>5，所谓初始化构造函数就是在构造对象的同时被对象自动调用,完成对事物的初始化,一个类只要生成一个类对象,它一定会调用初始化构造函数.<br>特点:<br>1&gt;一个类中只能有一个初始化构造函数<br>2&gt;不能有返回值<br>3&gt;可以用它来为每个实例定制自己的特征<br>6，方法重写指在子类中重新定义父类中已有的方法，这中现象叫做方法的重写<br>举例</p>
 <figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">People</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self,name,age</span>):</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">        self.tell()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">tell</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&quot;%s---%s&quot;</span>%(self.name,self.age))</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>(<span class="params">People</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">tell</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&quot;呵呵!&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    student = Student(<span class="string">&quot;alex&quot;</span>,<span class="number">20</span>)</span><br><span class="line">    <span class="comment">#查看Student所有的父类</span></span><br><span class="line">    print(Student.__bases__)</span><br><span class="line">    <span class="comment">#查看最近的父类</span></span><br><span class="line">    print(Student.__base__)</span><br><span class="line">    <span class="comment">#student既是Student类,又是People类</span></span><br><span class="line">    print(isinstance(student,Student))</span><br><span class="line">    print(isinstance(student,People))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>运行结果</p>
@@ -73,7 +73,7 @@
   </entry>
   <entry>
     <title>sql总结</title>
-    <url>/Blog/2020/08/24/sql%E6%80%BB%E7%BB%93/</url>
+    <url>/blog/2020/08/24/sql%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p>1，</p>
 <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> a.cntype,a.cy,a.efftype,a.s,a.scity scityname,b.city scity,</span><br><span class="line">a.d,a.dcity dcityname,c.city dcity,a.deptm,a.arrtm,a.overdays,a.cap,a.cap cap2,a.tmcal_ori,</span><br><span class="line"><span class="keyword">dateadd</span>(<span class="keyword">MINUTE</span>,-(<span class="number">180</span>+<span class="number">40</span>),tmcal_ori) tmcal <span class="keyword">into</span> <span class="comment">#t2</span></span><br><span class="line"><span class="keyword">from</span> <span class="comment">#t1 a</span></span><br><span class="line"><span class="keyword">left</span> <span class="keyword">join</span> <span class="comment">#tttpm b on a.scity=b.cityname</span></span><br><span class="line"><span class="keyword">left</span> <span class="keyword">join</span> <span class="comment">#tttpm c on a.dcity=c.cityname </span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>可以left join 一个相同的表两次<br>dadeadd（minute,-220,tmcal_ori）这个函数的意思是在tmcal_ori这个字段加上-220分钟。<br>像这种连接是将几个表按行连接到一起，select后面是选取需要的列。<br>2，</p>
@@ -97,7 +97,7 @@
   </entry>
   <entry>
     <title>定价策略</title>
-    <url>/Blog/2020/08/24/%E5%AE%9A%E4%BB%B7%E7%AD%96%E7%95%A5/</url>
+    <url>/blog/2020/08/24/%E5%AE%9A%E4%BB%B7%E7%AD%96%E7%95%A5/</url>
     <content><![CDATA[<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#-*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">这个文件中的代码实现的是定价策略，根据所投的流向和投的钱来比较哪种策略最好，当然这只是一个简易的版本，</span></span><br><span class="line"><span class="string">没有具体考虑到其它队的具体策略，但依然能够大概看出哪个流向最好。</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line">data = xlrd.open_workbook(<span class="string">r&#x27;d:\user\01378237\桌面\枢纽运营\公司资料\比赛\pricing_info.xlsx&#x27;</span>)</span><br><span class="line">Sheet = data.sheet_by_name(<span class="string">&#x27;pricing_info&#x27;</span>)</span><br><span class="line">i = <span class="number">1</span></span><br><span class="line">code=[]</span><br><span class="line">city = []</span><br><span class="line">price = []</span><br><span class="line">num = []</span><br><span class="line">amount = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        e = Sheet.cell_value(i,<span class="number">0</span>)</span><br><span class="line">        a = Sheet.cell_value(i,<span class="number">1</span>)</span><br><span class="line">        b = Sheet.cell_value(i,<span class="number">2</span>)</span><br><span class="line">        c = Sheet.cell_value(i,<span class="number">3</span>)</span><br><span class="line">        d = Sheet.cell_value(i,<span class="number">4</span>)</span><br><span class="line">        code.append(e)</span><br><span class="line">        city.append(a)</span><br><span class="line">        price.append(b)</span><br><span class="line">        num.append(c)</span><br><span class="line">        amount.append(d)</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"><span class="comment">#print(price)</span></span><br><span class="line">fdict = &#123;&#125;     <span class="comment">#键是城市名，值是一个列表，分别是单价，用户总数，和最大额度限制</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(city)):</span><br><span class="line">    fdict.setdefault(city[i],[]).append(price[i])</span><br><span class="line">    fdict.setdefault(city[i],[]).append(num[i])</span><br><span class="line">    fdict.setdefault(city[i],[]).append(amount[i])</span><br><span class="line"><span class="comment">#print(pdict)</span></span><br><span class="line"></span><br><span class="line">codedict=dict(zip(city,code))  <span class="comment">#这个字典键是城市名，值是序号</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">price_fun</span>(<span class="params">m,n</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    :param m: 城市名称</span></span><br><span class="line"><span class="string">    :param n: 投入的资金数目</span></span><br><span class="line"><span class="string">    :return:   新价格</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    new_price = (fdict.get(m)[<span class="number">0</span>]*fdict.get(m)[<span class="number">1</span>]-n)/fdict.get(m)[<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">return</span> new_price</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">numpeople</span>(<span class="params">m,n</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    用来计算一个流向如果全按最大值投的话可以获得的人数</span></span><br><span class="line"><span class="string">    :param m: 需要投的流向</span></span><br><span class="line"><span class="string">    :param n: 需要投的钱，一般n就是该流向所允许的最大值</span></span><br><span class="line"><span class="string">    :return:  该流向所获得的人数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    new_price = (fdict.get(m)[<span class="number">0</span>] * fdict.get(m)[<span class="number">1</span>] - n) / fdict.get(m)[<span class="number">1</span>]</span><br><span class="line">    a=new_price**(<span class="number">-1.09</span>) + ((fdict.get(m)[<span class="number">0</span>])**(<span class="number">-1.09</span>))*<span class="number">52</span></span><br><span class="line">    b = (fdict.get(m)[<span class="number">1</span>]/a)*new_price**(<span class="number">-1.09</span>)</span><br><span class="line">    c = (fdict.get(m)[<span class="number">1</span>]/a)*(fdict.get(m)[<span class="number">0</span>])**(<span class="number">-1.09</span>)</span><br><span class="line">    d = b-c</span><br><span class="line">    <span class="keyword">return</span> b</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">respeople</span>(<span class="params">m,n</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    这个函数是必须的，它是在全投完之后剩余的那些钱投的流向，这时候的钱已经不够一个完整的流向了</span></span><br><span class="line"><span class="string">    :param m: 需要投的流向</span></span><br><span class="line"><span class="string">    :param n: 需要投的金额</span></span><br><span class="line"><span class="string">    :return: 该流向m可以获得的用户数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    new_price = (fdict.get(m)[<span class="number">0</span>] * fdict.get(m)[<span class="number">1</span>] - n) / fdict.get(m)[<span class="number">1</span>]</span><br><span class="line">    a = new_price ** (<span class="number">-1.09</span>) + ((fdict.get(m)[<span class="number">0</span>]) ** (<span class="number">-1.09</span>)) * <span class="number">52</span></span><br><span class="line">    b = (fdict.get(m)[<span class="number">1</span>] / a) * new_price ** (<span class="number">-1.09</span>)</span><br><span class="line">    <span class="keyword">return</span> b</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">all_people</span>(<span class="params">m</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    #计算全投的那几个流向能够获得的用户数</span></span><br><span class="line"><span class="string">    :param m:   m是需要全投的那几个流向</span></span><br><span class="line"><span class="string">    :return:   全投的那些流向的用户总数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    rnum=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> m:</span><br><span class="line">        realnum = numpeople(i,amount[int(codedict.get(i))])</span><br><span class="line">        rnum.append(realnum)</span><br><span class="line">    c=sum(rnum)</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sur_people</span>(<span class="params">m</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    计算没有投的那些流向所获得的用户数</span></span><br><span class="line"><span class="string">    :param m: 没有投的那些流向</span></span><br><span class="line"><span class="string">    :return: 没有投的那些流向的用户总数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    ynum=[]     <span class="comment">#这个列表里是没有投的那些流向获得的用户数</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> city:</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> m:</span><br><span class="line">            ynum.append(num[int(codedict.get(i))]/<span class="number">53</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">    s=sum(ynum)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">minr=[]</span></span><br><span class="line"><span class="string">cl=[168]</span></span><br><span class="line"><span class="string">for i in city:</span></span><br><span class="line"><span class="string">    if i not in cl:</span></span><br><span class="line"><span class="string">        r=respeople(i,707167)   #r是剩余的钱能够获得的人数</span></span><br><span class="line"><span class="string">        minr.append(r)</span></span><br><span class="line"><span class="string">    else:</span></span><br><span class="line"><span class="string">        pass</span></span><br><span class="line"><span class="string">print(minr.index(max(minr)))</span></span><br><span class="line"><span class="string">print(city[1])</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    stra = [<span class="number">16</span>, <span class="number">35</span>, <span class="number">168</span>]</span><br><span class="line">    c=<span class="number">137</span></span><br><span class="line">    n=<span class="number">707167</span></span><br><span class="line">    print(all_people(stra)+sur_people(stra)+respeople(c,n))</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>编程</category>
@@ -105,7 +105,7 @@
   </entry>
   <entry>
     <title>工作与生活</title>
-    <url>/Blog/2020/08/24/%E5%B7%A5%E4%BD%9C%E4%B8%8E%E7%94%9F%E6%B4%BB/</url>
+    <url>/blog/2020/08/24/%E5%B7%A5%E4%BD%9C%E4%B8%8E%E7%94%9F%E6%B4%BB/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>生活感悟</category>
@@ -113,7 +113,7 @@
   </entry>
   <entry>
     <title>机器学习中的特征工程</title>
-    <url>/Blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/</url>
+    <url>/blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/</url>
     <content><![CDATA[<p>​在机器学习的模型训练中，特征工程是非常重要的环节，虽然很多机器学习的相关书籍都把重要的篇幅放在了算法上，但是在实际的应用中，特征工程是非常重要的环节，甚至可以说是决定模型结果的关键。关于特征工程有一下几个问题需要搞清楚：1，为什么要进行特征工程 2，进行特征工程的方法有哪些。<br>1，为什么要进行特征工程<br>以非常经典的房价预测为例，影响房价的因素有很多，原始的数据集大约有几十个特征，那么我们这些特征我们都需要吗，可能有些因素与最终的房价相关度并不高，也有可能有的特征直接有冗余，这时就需要我们去掉一些特征。也有可能需要我们去根据现有特征去创造新的特征，面对不同的问题会有不同的解决方案，不可一概而论。<br>特征工程可以说实在寻找一种好的数据表示，初学者可能会有疑问，如果不进项特征工程会怎样，加入把原始的特征全部放到模型中，那么可能有些特征与最终的标签无关，或者关联很小，这样会使训练出来的模型过拟合，也就是特征太多，模型太复杂，这样训练出来的模型往往在训练集上表现很好，但是在测试集中往往表现不佳。这和数据中有大量异常值类似</p>
 ]]></content>
       <categories>
@@ -122,7 +122,7 @@
   </entry>
   <entry>
     <title>机器学习笔记</title>
-    <url>/Blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/blog/2020/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>1,对应缺失数据较少的情况可以用插值法来处理，插值的方法可以是随机森林<br>2，当使用逻辑回归建模时因为需要的特征都是数值型特征，所以会先选择将特征因子化，比如常见的one-hot编码,如下面的例子所示：</p>
 <figure class="highlight py"><table><tr><td class="code"><pre><span class="line">dummies_Cabin = pd.get_dummies(data_train[<span class="string">&#x27;Cabin&#x27;</span>], prefix= <span class="string">&#x27;Cabin&#x27;</span>)</span><br></pre></td></tr></table></figure>
 <p>2,为什么要降维？<br>主要是出于如下考虑：1. 特征维数越高，模型越容易过拟合，此时更复杂的模型就不好用。2. 相互独立的特征维数越高，在模型不变的情况下，在测试集上达到相同的效果表现所需要的训练样本的数目就越大。 3. 特征数量增加带来的训练、测试以及存储的开销都会增大。4.在某些模型中，例如基于距离计算的模型KMeans，KNN等模型，在进行距离计算时，维度过高会影响精度和性能。5.可视化分析的需要。在低维的情况下，例如二维，三维，我们可以把数据绘制出来，可视化地看到数据。当维度增高时，就难以绘制出来了。在机器学习中，有一个非常经典的维度灾难的概念。用来描述当空间维度增加时，分析和组织高维空间，因体积指数增加而遇到各种问题场景。例如，100个平均分布的点能把一个单位区间以每个点距离不超过0.01采样；而当维度增加到10后，如果以相邻点距离不超过0.01小方格采样单位超一单位超正方体，则需要10^20 个采样点。<br>所以特征不是越多越好，过多的特征可能会造成过拟合，增加计算开销<br>3，PCA算法<br>通过协方差矩阵的特征值分解能够得到数据的主成分，以二维特征为例，两个特征之间可能存在线性关系（例如运动的时速和秒速度），这样就造成了第二维信息是冗余的。PCA的目标是发现这种特征之间的线性关系，并去除。<br>4，将缺失值补为0的方法用fillna(0)完成<br>     round([],2)后边的2是保留后两位小数<br>5，</p>
@@ -135,7 +135,7 @@
   </entry>
   <entry>
     <title>线性函数为什么重要</title>
-    <url>/Blog/2020/08/24/%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%8D%E8%A6%81/</url>
+    <url>/blog/2020/08/24/%E7%BA%BF%E6%80%A7%E5%87%BD%E6%95%B0%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%8D%E8%A6%81/</url>
     <content><![CDATA[<h2 id="1，线性函数的定义："><a href="#1，线性函数的定义：" class="headerlink" title="1，线性函数的定义："></a>1，线性函数的定义：</h2><p>如果你去查关于线性函数的定义，那么教科书里会说类似于下面的函数可以被称为线性函数<br>$$<br>f(x_i)=a_1x_1+a_2x_2+…a_nx_n<br>$$<br>从数学的角度来说，这似乎不太严谨，直观来看，’线性’和加法与乘法有关，熟悉线性代数的读者应该还记得关于线性空间的定义，所谓的线性空间就与<strong>加性</strong>和<strong>乘性</strong>有关：</p>
 <p><strong>线性空间可以定义为加法和标量乘法的集合V。V上的加法（addition）指的是一个函数，它把每一对 u,v</strong> 都对应到V的一个元素u+v。V上的标量乘法（scalar multiplication）也是一个函数，它把任意<br>$$<br>a\in F,v\in V<br>$$<br>对应到V的一个元素</p>
 <p>这里F是一个域，V称为域F上的线性空间。</p>
@@ -152,7 +152,7 @@
   </entry>
   <entry>
     <title>sql存储过程</title>
-    <url>/Blog/2020/08/24/sql%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B/</url>
+    <url>/blog/2020/08/24/sql%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<p>sql server的存储过程类似于其他编程语言中的函数，可以将常用的逻辑固化下来，将表视为参数，存储过程可以大大提高工作效率。存储过程的启用可以用java或者python语言控制工作流；</p>
 <p>有几个需要注意的点：</p>
 <p>1，提前判断表是否已经存在，否则可能会报错.</p>
@@ -169,12 +169,12 @@
   </entry>
   <entry>
     <title>工作感悟</title>
-    <url>/Blog/2020/08/23/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/</url>
+    <url>/blog/2020/08/23/%E5%B7%A5%E4%BD%9C%E6%84%9F%E6%82%9F/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>看房</title>
-    <url>/Blog/2020/08/23/%E7%9C%8B%E6%88%BF/</url>
+    <url>/blog/2020/08/23/%E7%9C%8B%E6%88%BF/</url>
     <content><![CDATA[<p>今天是周六，下午孩子睡了，我和老婆没事儿聊起来看房子的事情，本来结婚后也没有买房，一直和父母住在一起，主要是可以帮忙照看孩子，但也不是长久之计，毕竟也快30了，我这个年纪的基本上也都是还房贷的打工仔，看看房子也可以给工作增加一点动力。</p>
 <p>说走就走，我和老婆开车来到高碑店东站附近，来这个区位主要是我在北京上班，需要来回跑，通了高铁之后方便很多，这样下了高铁就到家了，很方便。我们先看的是万科的房子，有高层和洋房可选，面积适中，90和110的，我们看了110的样本房，感觉装修的还不错，他家的房子主打的就是带装修，不是常见的毛坯房，这在我们这种小县城还是个新鲜玩意儿，不过据说在大城市都已经普及了。看完之后，销售很热情的给我们介绍了其他的一些配套设施，比如医院，教育，物业，绿化等。因为小区还在建设当中，这附近也属于新开发的地段，前景是很好的，只不过目前的配套还不是很完善，以后肯定会越来越好。聊了下价格就撤了，改换隔壁的昊龙阖府。</p>
 <p>这是一家本地的开发商，他家的是毛坯房，赠送车位，价格也相对万科便宜一些，只不过他家的销售态度不好，进去之后就简单介绍了一下区位和目前在售的房型就草草了事，也没有样板间可以看，总体来说体验不如上一家。也许房子的质量不错，但销售的态度也是我们考虑的重要方面。</p>
@@ -183,7 +183,7 @@
   </entry>
   <entry>
     <title>集成学习</title>
-    <url>/Blog/2020/08/23/%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/</url>
+    <url>/blog/2020/08/23/%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>集成学习有两点非常重要，1，每一个基分类器是如何生成的。2，这些基分类器是如何组合的。<br><strong>Adaboost算法</strong><br>Adaboost算法用于分类任务，最后的强分类器等于几个带不同权重的分类器之和，误差率越小那么该弱分类器的权重越大；在首次训练时，每个样本的权重一样，为1/m，m为样本个数。每次迭代后，更新样本权重，其中分错的样本增加权重，以获得更多关注，分对的样本相应降低权重。<br>之所以增加错误样本的权重会使错分的概率降低，是因为我们定义的误差为：错误样本的权重之和，我们的目标是使该误差最小。<br>还有</p>
 ]]></content>
       <categories>
@@ -192,7 +192,7 @@
   </entry>
   <entry>
     <title>当父亲之后</title>
-    <url>/Blog/2020/08/23/%E5%BD%93%E7%88%B6%E4%BA%B2%E4%B9%8B%E5%90%8E/</url>
+    <url>/blog/2020/08/23/%E5%BD%93%E7%88%B6%E4%BA%B2%E4%B9%8B%E5%90%8E/</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
